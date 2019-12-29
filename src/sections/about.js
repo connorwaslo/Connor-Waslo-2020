@@ -10,7 +10,7 @@ export default ({bgColor}) => (
     <LayoutTextCenter>
       <SectionTitle title='Who am I?'/>
       <br/>
-      <h1 className='about-text display-4 my-5'>
+      <h1 className='about-text display-4 my-4'>
         CS Student @ Vanderbilt
         <img src={require('../images/inline/anchordown.png')} alt='anchordown'
              style={{width: '1.5em', marginBottom: 0}}/>

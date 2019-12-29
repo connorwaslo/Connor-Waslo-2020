@@ -29,7 +29,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: "src/utils/typography.js"
+        pathToConfigModule: "src/utils/typography.js",
+        omitGoogleFont: true
+      }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Tajawal`,
+            variants: [`300`, `400`]
+          }
+        ]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
