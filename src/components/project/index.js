@@ -1,17 +1,21 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import TileBackground from "../tile-background"
 import ProjectTile from "../project-tile"
 import './project.module.css';
 
-function Project({colSize, img, title}) {
+// Todo: Implement react-router-scroll here to maintain location on main page
+function Project({colSize, img, title, link}) {
   let col = 'col-md-' + colSize;
   const classes = col + ' project';
 
   return (
     <div className={classes}>
-      <TileBackground>
-        <ProjectTile img={img} title={title}/>
-      </TileBackground>
+      <Link to={link}>
+        <TileBackground>
+          <ProjectTile img={img} title={title}/>
+        </TileBackground>
+      </Link>
     </div>
   )
 };

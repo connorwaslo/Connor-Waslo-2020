@@ -2,7 +2,7 @@ import React from 'react';
 import LayoutProjectBlog from "../components/layouts/layout-project-blog"
 import ProjectBlogHeader from "../components/project-blog-header"
 
-const Automation = () => (
+const CourseRegistration = () => (
   <LayoutProjectBlog>
     <ProjectBlogHeader img={require('../images/projects/v.png')} alt='vanderbilt'>
       <h1 className='display-3'>Overhauling Course Registration @ Vanderbilt University</h1>
@@ -11,4 +11,4 @@ const Automation = () => (
   </LayoutProjectBlog>
 );
 
-export default Automation;
+export default CourseRegistration;

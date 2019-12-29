@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "connor-waslo-2020",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal website for the new year.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Connor Waslo <connor.r.waslo@vanderbilt.edu>",
   "dependencies": {
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",

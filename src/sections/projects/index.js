@@ -21,7 +21,10 @@ function Projects() {
 
         <h1 className='text-center my-5'>Past Projects</h1>
         <div className='row row-eq-height my-5'>
-          <Project colSize={4} img={require("../../images/projects/v.png")} title='Better Course Registration'/>
+          <Project colSize={4}
+                   img={require("../../images/projects/v.png")}
+                   title='Better Course Registration'
+                   link='/course-registration'/>
           <Project colSize={4} img={require("../../images/projects/ibj.png")} title='Justice Hub'/>
           <Project colSize={4} img={require("../../images/projects/ignytion.png")} title='Ignytion'/>
         </div>
