@@ -3,10 +3,10 @@ import styles from './project-tile.module.css';
 
 function ProjectTile({img, title}) {
   return (
-    <div>
+    <React.Fragment>
       <img src={img} alt='project-image' className={styles.projectImage}/>
       <h1 className='text-center'>{title}</h1>
-    </div>
+    </React.Fragment>
   )
 }
 

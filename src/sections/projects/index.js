@@ -2,8 +2,6 @@ import React from 'react';
 import FullHeight from "../../components/fullheight"
 import LayoutTextCenter from "../../components/layout-text-center"
 import SectionTitle from "../../components/section-title"
-import ProjectTile from "../../components/project-tile"
-import TileBackground from "../../components/tile-background";
 import Project from '../../components/project';
 
 // Todo: Make TileBackgrounds the same height
