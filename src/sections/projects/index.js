@@ -1,13 +1,12 @@
 import React from 'react';
-import FullHeight from "../../components/fullheight"
-import LayoutTextCenter from "../../components/layout-text-center"
+import LayoutTextCenter from "../../components/layouts/layout-text-center"
 import SectionTitle from "../../components/section-title"
 import Project from '../../components/project';
 
 // Todo: Make TileBackgrounds the same height
-function Projects({bgColor}) {
+function Projects() {
   return (
-    <FullHeight bgColor={bgColor}>
+    <div>
       <LayoutTextCenter style={{width: '80%'}}>
         <SectionTitle title="What I'm Working On"/>
 
@@ -19,8 +18,20 @@ function Projects({bgColor}) {
         </div>
 
         <hr className='my-5'/>
+
+        <h1 className='text-center my-5'>Past Projects</h1>
+        <div className='row row-eq-height my-5'>
+          <Project colSize={4} img={require("../../images/projects/v.png")} title='Better Course Registration'/>
+          <Project colSize={4} img={require("../../images/projects/ibj.png")} title='Justice Hub'/>
+          <Project colSize={4} img={require("../../images/projects/ignytion.png")} title='Ignytion'/>
+        </div>
+        <div className='row row-eq-height my-5'>
+          <Project colSize={4} img={require("../../images/projects/eye.png")} title='Hands-free Art'/>
+          <Project colSize={4} img={require("../../images/projects/gocode.png")} title='GoCode'/>
+          <Project colSize={4} img={require("../../images/projects/treehacks.svg")} title='Nutrition App'/>
+        </div>
       </LayoutTextCenter>
-    </FullHeight>
+    </div>
   )
 }
 
