@@ -10,6 +10,7 @@ function Interests() {
       <h1 className="text-center text-white my-5">Drinking Coffee ☕</h1>
       <h1 className="text-center text-white my-5">Storytelling 🗣️</h1>
       <h1 className="text-center text-white my-5">Beach Volleyball 🏐</h1>
+      <h1 className="text-center text-white my-5">Spicy Food 🔥</h1>
     </LayoutParallax>
   )
 }
