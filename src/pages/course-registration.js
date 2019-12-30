@@ -27,7 +27,7 @@ const CourseRegistration = () => (
 
     <BlogText>I coded this from scratch with React.js and Firebase. Henry went through
     the student handbook and collected all the courses offered by the school (huge shoutout
-    to him for doing that - it sounded like hell).</BlogText>
+    to him for doing that — it sounded like hell).</BlogText>
     <BlogText>Eventually, we got an email from the Dean of Engineering at Vanderbilt
     asking us to meet and discuss our course registration tool.</BlogText>
     <BlogText>As soon as they were positive we weren't hacking into YES, we were able to meet
@@ -38,6 +38,8 @@ const CourseRegistration = () => (
          this 4 page white paper
       </a>
       {' '}detailing our research and suggestions.</BlogText>
+    <BlogText>The registrar then took our white paper and pitched it to the Deans
+    on our behalf. Fortunately, they were very receptive and appreciated our perspective as students.</BlogText>
     <BlogText>Thanks to the University Registrar for advocating for us, Vanderbilt is now
     exploring new technology to modernize course registration and make the process
     less stressful for students.</BlogText>
