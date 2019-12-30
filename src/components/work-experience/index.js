@@ -14,7 +14,7 @@ function WorkExperience({children, img, alt, company, title, date}) {
         <div className='col-lg-12 d-lg-none'>
           <h1 className='text-center'>{company}</h1>
           <h4 className='text-center'>{title}</h4>
-          <h4 className='text-center'>{date}</h4>
+          <h4 className='text-center'><i>{date}</i></h4>
           {children}
         </div>
         <div className='col-lg-12 d-none d-lg-block'>
