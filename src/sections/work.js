@@ -13,7 +13,7 @@ function Work({style}) {
           <p>I spent last summer having a lot fun working fast and learning as much
             as possible at an early-stage startup in the hospitality-technology space</p>
           <p>Worked as the middle-man between engineering and sales, helping both sides
-            understand each others’ needs and capabilities to ultimately find <b>product market fit</b></p>
+            understand each others’ needs and capabilities to ultimately find <b>product-market fit</b></p>
           <p>Conducted inside and outside sales to tour and activity companies
             and property managers</p>
           <p>Cold calls to product managers across the country to better
