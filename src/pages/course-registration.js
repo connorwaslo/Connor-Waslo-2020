@@ -5,7 +5,7 @@ import BlogText from "../components/blog-text"
 import ProjectScreenshot from "../components/project-screenshot"
 
 const CourseRegistration = () => (
-  <LayoutProjectBlog>
+  <LayoutProjectBlog footnote={require('../images/blog-footnotes/pillar.png')}>
     <ProjectBlogHeader img={require('../images/projects/v.png')} alt='vanderbilt'>
       <h1 className='display-3'>Overhauling Course Registration @ Vanderbilt University</h1>
       <h1><i>June - November 2019</i></h1>
@@ -16,7 +16,7 @@ const CourseRegistration = () => (
     <BlogText>We wanted to expand upon our own experiences using YES, Vanderbilt's current
     course registration platform, and so we began interviewing students across
     all years and majors.</BlogText>
-    <BlogText><b>65</b> interviews later and we felt that we had a good
+    <BlogText>65 interviews later and we felt that we had a good
     idea about what students felt they needed to make course selection easier.</BlogText>
     <BlogText>Rather than approaching the school, we decided to build out our
     own platform.</BlogText>
@@ -43,6 +43,14 @@ const CourseRegistration = () => (
     <BlogText>Thanks to the University Registrar for advocating for us, Vanderbilt is now
     exploring new technology to modernize course registration and make the process
     less stressful for students.</BlogText>
+
+    <br/>
+
+    <BlogText>
+        <a href="https://github.com/connorwaslo/vandy-class-search" target="_blank">
+          If you're interested, you can check out the source code here.
+        </a>
+    </BlogText>
   </LayoutProjectBlog>
 );
 

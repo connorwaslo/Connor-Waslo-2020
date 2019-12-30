@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import './layout-project-blog.module.css';
 
 const BackArrow = () => (
   <Link to='/'>
@@ -12,11 +11,12 @@ const BackArrow = () => (
   </Link>
 )
 
-function LayoutProjectBlog({children, style}) {
+function LayoutProjectBlog({children, footnote, style}) {
   return (
-    <div className='container' style={style}>
+    <div className='container pb-5 mb-5' style={style}>
       <BackArrow/>
       {children}
+      <img className='mt-5' src={footnote} alt={''} style={{width: '10vh', height: '10vh'}}/>
     </div>
   )
 }
