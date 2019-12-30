@@ -2,6 +2,8 @@ import React from 'react';
 import LayoutTextCenter from "../../components/layouts/layout-text-center"
 import SectionTitle from "../../components/section-title"
 import Project from '../../components/project';
+import BlogText from "../../components/blog-text"
+import LayoutProjectBlog from "../../components/layouts/layout-project-blog"
 
 // Todo: Make TileBackgrounds the same height
 function Projects() {
@@ -24,14 +26,37 @@ function Projects() {
           <Project colSize={4}
                    img={require("../../images/projects/v.png")}
                    title='Better Course Registration'
-                   link='/course-registration'/>
-          <Project colSize={4} img={require("../../images/projects/ibj.png")} title='Justice Hub'/>
-          <Project colSize={4} img={require("../../images/projects/ignytion.png")} title='Ignytion'/>
+                   link='/course-registration'>
+            <h5>My friend, Henry Hunter, and I wrote a white paper detailing how course registration
+            at Vanderbilt could be improved.</h5>
+            <h5>Our white paper convinced administration to begin pursuing new technology to
+            improve course registration.</h5>
+          </Project>
+          <Project colSize={4} img={require("../../images/projects/ibj.png")} title='Justice Hub'>
+            <h5>I worked with a team of four to develop a mobile app connecting people in developing
+            countries with pro bono legal representation.</h5>
+            <h5>Our MVP helped International Bridges to Justice raise $10k in grant funding.</h5>
+          </Project>
+          <Project colSize={4} img={require("../../images/projects/ignytion.png")} title='Ignytion'>
+            <h5>I started a company that does web automation and data scraping for startups, saving
+              them 100s of hours and >$10k dollars.</h5>
+          </Project>
         </div>
         <div className='row row-eq-height my-5'>
-          <Project colSize={4} img={require("../../images/projects/eye.png")} title='Hands-free Art'/>
-          <Project colSize={4} img={require("../../images/projects/gocode.png")} title='GoCode'/>
-          <Project colSize={4} img={require("../../images/projects/treehacks.svg")} title='Nutrition App'/>
+          <Project colSize={4} img={require("../../images/projects/eye.png")} title='Hands-free Art'>
+            <h5>MakeHarvard 2019</h5>
+            <h5>Worked in a team of four to develop a robotic arm controlled by pupil motion that
+            allowed the user to draw hands-free.</h5>
+          </Project>
+          <Project colSize={4} img={require("../../images/projects/gocode.png")} title='GoCode'>
+            <h5>Created a mobile app to teach kids web development through project-based learning.</h5>
+            <h5>I programmed the app from scratch and won two startup pitch competitions.</h5>
+          </Project>
+          <Project colSize={4} img={require("../../images/projects/treehacks.svg")} title='Nutrition App'>
+            <h5>TreeHacks 2019</h5>
+            <h5>Developed a mobile app that allows the user to take a photo of their food and track their
+            nutritional intake.</h5>
+          </Project>
         </div>
       </LayoutTextCenter>
     </div>
