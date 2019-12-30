@@ -11,7 +11,7 @@ function Project({colSize, img, title, link}) {
 
   return (
     <div className={classes}>
-      <Link to={link}>
+      <Link to={link} className='gatsby-link'>
         <TileBackground>
           <ProjectTile img={img} title={title}/>
         </TileBackground>
