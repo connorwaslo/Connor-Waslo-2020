@@ -14,9 +14,32 @@ function Projects() {
 
         <h1 className='text-center my-5'>Current Projects</h1>
         <div className='row row-eq-height'>
-          <Project colSize={4} img={require("../../images/projects/optimize.svg")} title='Automation & Optimization'/>
-          <Project colSize={4} img={require("../../images/projects/uvo.png")} title='Reduce Recidivism'/>
-          <Project colSize={4} img={require("../../images/projects/nba.png")} title='Winnr'/>
+          <Project colSize={4}
+                   img={require("../../images/projects/optimize.svg")}
+                   title='Automation & Optimization'
+                   link='/automation' disable={true}>
+            <h5>I'm fascinated by optimization problems. Automation is a tool that
+            can be used to save everybody time and money.</h5>
+            <h5>Currently, I'm doing research into automating fraud analysis. More to come soon hopefully. 🤞</h5>
+          </Project>
+          <Project colSize={4}
+                   img={require("../../images/projects/uvo.png")}
+                   title='Reduce Recidivism'
+                   link='unheard-voices'>
+            <h5>I'm the Project Manager on a team of five developing a mobile app for a Nashville non-profit
+            called Unheard Voices Outreach.</h5>
+            <h5>The goal is to reduce recidivism in Nashville (and later across the nation) by providing individuals
+            with resources and mentors.</h5>
+          </Project>
+          <Project colSize={4}
+                   img={require("../../images/projects/nba.png")}
+                   title='Winnr'
+                   link='/winnr'>
+            <h5>My friend <a href='https://www.linkedin.com/in/nicholas-teddy-wagner-354047181/' target='_blank'>Teddy Wagner</a> and I
+              started this project last year - using Twitter sentiment to predict NFL games.</h5>
+            <h5>It's since evolved and now is more of a pet project learning data science by creating models to use for
+              sports betting.</h5>
+          </Project>
         </div>
 
         <hr className='my-5'/>
