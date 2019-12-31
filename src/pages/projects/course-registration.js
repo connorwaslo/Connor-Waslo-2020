@@ -1,12 +1,12 @@
 import React from 'react';
-import LayoutProjectBlog from "../components/layouts/layout-project-blog"
-import ProjectBlogHeader from "../components/project-blog-header"
-import BlogText from "../components/blog-text"
-import ProjectScreenshot from "../components/project-screenshot"
+import LayoutProjectBlog from "../../components/layouts/layout-project-blog"
+import ProjectBlogHeader from "../../components/project-blog-header"
+import BlogText from "../../components/blog-text"
+import ProjectScreenshot from "../../components/project-screenshot"
 
 const CourseRegistration = () => (
-  <LayoutProjectBlog footnote={require('../images/blog-footnotes/pillar.png')}>
-    <ProjectBlogHeader img={require('../images/projects/v.png')} alt='vanderbilt'>
+  <LayoutProjectBlog footnote={require('../../images/blog-footnotes/pillar.png')}>
+    <ProjectBlogHeader img={require('../../images/projects/v.png')} alt='vanderbilt'>
       <h1 className='display-3'>Overhauling Course Registration @ Vanderbilt University</h1>
       <h1><i>June - November 2019</i></h1>
     </ProjectBlogHeader>
@@ -21,7 +21,7 @@ const CourseRegistration = () => (
     <BlogText>Rather than approaching the school, we decided to build out our
     own platform.</BlogText>
 
-    <ProjectScreenshot src={require('../images/screenshots/better_yes.png')}
+    <ProjectScreenshot src={require('../../images/screenshots/better_yes.png')}
                        alt='better yes'
                        caption='A screenshot of our MVP. Function over fashion or something like that...'/>
 
