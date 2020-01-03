@@ -21,7 +21,7 @@ const CourseRegistration = () => (
     <BlogText>Rather than approaching the school, we decided to build out our
     own platform.</BlogText>
 
-    <ProjectScreenshot src={require('../../images/screenshots/better_yes.png')}
+    <ProjectScreenshot src={require('../../images/blog-pics/better_yes.png')}
                        alt='better yes'
                        caption='A screenshot of our MVP. Function over fashion or something like that...'/>
 
