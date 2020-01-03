@@ -18,10 +18,11 @@ function Winnr() {
       <BlogText>So far, this has been a very long way of learning that Vegas is really
       good and that predictive analytics are hard.</BlogText>
       <BlogText>Teddy and I originally began developing an algorithm to predict NFL games
-      using Twitter sentiment. This worked semi-consistently (better than if we predicted games) on a small sample size.</BlogText>
+      using Twitter sentiment. This worked semi-consistently (better than if we predicted games ourselves)
+        on a small sample size.</BlogText>
       <BlogText>Downloading a season of tweets and using machine learning was</BlogText>
       <BlogText>1) Stupid expensive</BlogText>
-      <BlogText>2) Not profitable</BlogText>
+      <BlogText>2) Not accurate enough to be profitable</BlogText>
       <BlogText>On the bright side, our research was funded by a grant that we won through a pitch competition.</BlogText>
       <br/>
       <BlogText>I've since moved away from using Twitter sentiment and towards using pure statistics to make NBA predictions.
