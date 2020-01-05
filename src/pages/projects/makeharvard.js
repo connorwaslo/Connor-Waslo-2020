@@ -14,7 +14,7 @@ function MakeHarvard() {
         <h1><i>February 2019</i></h1>
       </ProjectBlogHeader>
 
-      <BlogText>Make Harvard is hackathon which requires you to build something physical and not just software.</BlogText>
+      <BlogText>Make Harvard is a hackathon which requires you to build something physical and not just software.</BlogText>
       <BlogText>My team designed and built a robotic arm which is controlled entirely by pupil motion. Our intention
       was that this could be used by those with physical disabilities to still express their creative side.</BlogText>
       <BlogText>I was responsible for developing the pupil-tracking part of the project. The hardest part of this was
