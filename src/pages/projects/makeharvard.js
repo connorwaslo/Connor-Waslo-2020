@@ -22,7 +22,7 @@ function MakeHarvard() {
       pre-built eye tracking models and sending the right data to the arduinos.</BlogText>
       <BlogText>Unfortunately, we built the arms way too long for the tiny motors we had and the range of motion was...
       subpar.</BlogText>
-      <BlogText>We may not have won, but all in all this was a great learning experience.</BlogText>
+      <BlogText>We may not have won, but this was a great learning experience.</BlogText>
     </LayoutProjectBlog>
   )
 }
