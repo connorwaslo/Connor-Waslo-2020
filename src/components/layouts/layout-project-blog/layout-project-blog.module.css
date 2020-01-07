@@ -1,0 +1,23 @@
+@media (orientation: landscape) {
+    .back-arrow {
+        position: fixed;
+        top: 2.5vh;
+        left: 2vw;
+        width: 2.5vw;
+        height: 2.5vh;
+    }
+}
+
+@media (orientation: portrait) {
+    .back-arrow {
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .blog-margins {
+        padding-left: 10vw;
+    }
+}
