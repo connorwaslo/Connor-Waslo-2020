@@ -1,11 +1,10 @@
 import React from 'react';
 import LayoutTextCenter from "../../components/layouts/layout-text-center"
 import SectionTitle from "../../components/section-title"
-import Project from '../../components/project';
-import BlogText from "../../components/blog-text"
-import LayoutProjectBlog from "../../components/layouts/layout-project-blog"
+import Project from '../../components/project'
 
 // Todo: Make TileBackgrounds the same height
+// Todo: Address warning about emojis being wrapped in a span w/ role "img" and aria-label
 function Projects() {
   return (
     <div>

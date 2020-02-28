@@ -57,6 +57,6 @@ function Project({children, colSize, img, title, link, disable}) {
       }
     </div>
   )
-};
+}
 
 export default Project;
