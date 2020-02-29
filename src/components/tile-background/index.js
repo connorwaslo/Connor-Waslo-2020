@@ -20,7 +20,7 @@ const Tile = posed.div({
 
 function TileBackground({children}) {
   return (
-    <Tile>
+    <Tile style={{ padding: '5%' }}>
       {children}
     </Tile>
   )

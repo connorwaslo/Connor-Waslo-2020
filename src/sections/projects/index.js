@@ -60,7 +60,7 @@ function Projects() {
             <h5>Our MVP helped International Bridges to Justice raise $10k in grant funding.</h5>
           </Project>
           <Project colSize={4} img={require("../../images/projects/ignytion.png")} title='Ignytion' link='/projects/ignytion'>
-            <h5>I started a company that does web automation and data scraping for startups, saving
+            <h5>I started a company that built web automation and data scraping software for startups, saving
               them 100s of hours and >$10k dollars.</h5>
           </Project>
         </div>
