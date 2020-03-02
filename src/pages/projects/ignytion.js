@@ -27,7 +27,7 @@ function Ignytion() {
             writer.writerow(row)
   `;
 
-  // Todo: Add gatsby-remark-prismjs and show some example code from a past project
+  // Todo: Add some screenshots in here
   return (
     <LayoutProjectBlog footnote={require('../../images/blog-footnotes/robot.png')}>
       <ProjectBlogHeader img={require('../../images/projects/ignytion.png')} alt='Ignytion'>
@@ -78,6 +78,7 @@ function Ignytion() {
       <BlogText>When I got to college I decided to retire Ignytion so that I could focus on scalable ideas. But every
       once in a while I need to break out the hard skills I learned from Ignytion and scrape some data together.</BlogText>
       <BlogText>Shoot me an email if you want to chat about it!</BlogText>
+      {/* Todo: Click this link and automatically copy it to clipboard */}
       <BlogText>connor.r.waslo@vanderbilt.edu</BlogText>
     </LayoutProjectBlog>
   )
