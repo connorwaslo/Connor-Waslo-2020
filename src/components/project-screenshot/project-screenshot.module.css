@@ -2,6 +2,10 @@
     max-width: 85%;
 }
 
+.vertical {
+    width: 15%;
+}
+
 .center {
     display: block;
     margin: auto;

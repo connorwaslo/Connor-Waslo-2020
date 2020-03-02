@@ -2,6 +2,7 @@ import React from 'react';
 import LayoutProjectBlog from "../../components/layouts/layout-project-blog"
 import ProjectBlogHeader from "../../components/project-blog-header"
 import BlogText from "../../components/blog-text"
+import ProjectScreenshot from "../../components/project-screenshot"
 
 function GoCode() {
   return (
@@ -25,7 +26,9 @@ function GoCode() {
         and user experience. Surely version 1 needed to look beautiful right?</BlogText>
       <BlogText>After spending three months and hundreds of hours building the app, I released it on the App Store and
       Google Play Store. I felt like we had created such a clean, streamlined app. Surely <i>somebody</i> wanted to use it.</BlogText>
-      <br/>
+      <ProjectScreenshot src={require('../../images/blog-pics/sololearn1.png')} alt='A competitors app' caption='Test'
+        vertical/>
+
       <BlogText>Wrong.</BlogText>
       <br/>
       <BlogText>I made probably the most common mistake a wannabe-startup-founder can make. I built a solution without
