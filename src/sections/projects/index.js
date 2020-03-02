@@ -53,6 +53,11 @@ function Projects() {
             at Vanderbilt could be improved.</h5>
             <h5>Our white paper convinced administration to begin pursuing new technology to
             improve course registration.</h5>
+            <h5>
+              <a href="https://connor-waslo-com.s3.amazonaws.com/Course+Registration+White+Paper+-+Waslo%2C+Hunter.pdf" target="_blank">
+                You can read the white paper here.
+              </a>
+            </h5>
           </Project>
           <Project colSize={4} img={require("../../images/projects/ibj.png")} title='Justice Hub' link='/projects/justice-hub'>
             <h5>I worked with a team of four to develop a mobile app connecting people in developing
