@@ -3,8 +3,30 @@ import LayoutProjectBlog from "../../components/layouts/layout-project-blog"
 import ProjectBlogHeader from "../../components/project-blog-header"
 import BlogHeader from "../../components/blog-header"
 import BlogText from "../../components/blog-text"
+import CodeSnippet from "../../components/code-snippet"
 
 function Ignytion() {
+  const exampleCode = `
+  def parse(self, response):
+        url = response.request.url
+        article = url[url.find('ars/') + 4:url.rfind('/')]
+        desc = response.css('p font::text').extract()
+        text = response.css('p::text').extract()
+
+        self.append_csv(article, desc, text[1:])
+
+    def append_csv(self, article, desc, text):
+        row = [article]
+        for d in desc:
+            row.append(d)
+        for item in text:
+            row.append(item)
+
+        with open('ars_info.csv', 'a', encoding='UTF-8', newline='') as out:
+            writer = csv.writer(out)
+            writer.writerow(row)
+  `;
+
   // Todo: Add gatsby-remark-prismjs and show some example code from a past project
   return (
     <LayoutProjectBlog footnote={require('../../images/blog-footnotes/robot.png')}>
@@ -30,9 +52,11 @@ function Ignytion() {
         All of the work to code a solution simply disappeared into the jungle of documents on my computer.</BlogText>
       <BlogText>In the case that I was building a process automation solution for a startup, I often just ran it
       on my computer until it was done. The startup checked it was successful and then we went our separate ways.</BlogText>
-      <BlogText>Take this code for example. This is a snippet of a spider designed to scrape 100k's of pages.</BlogText>
+      <BlogText>Take this code for example. This is a snippet of a spider designed to scrape ~23k Arizona state statutes
+      for use by a company working to help educate Arizona citizens on their rights.</BlogText>
       <br/>
-      {/* Add the code here! */}
+
+      <CodeSnippet code={exampleCode}/>
 
       <BlogHeader>My Takeaways</BlogHeader>
       <BlogText>Managing communication with clients is hard!</BlogText>
