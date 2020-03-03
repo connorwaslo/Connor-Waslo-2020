@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from "../components/section-title"
 import WorkExperience from "../components/work-experience"
+import CornerIcon from "../components/corner-icon"
 
 function Work({style}) {
   return (
@@ -35,6 +36,8 @@ function Work({style}) {
           <p>Built a white-label mobile application for contractors to increase customer retention</p>
         </WorkExperience>
       </div>
+      <CornerIcon src={require('../images/corner-icons/laptop.png')} alt='laptop'
+                  style={{ bottom: '2.5vh', right: '5vw' }}/>
     </div>
   )
 }

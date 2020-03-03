@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Intro/>
     <About bgColor='#F2F2F2'/>
     <Projects/>
-    <Work style={{backgroundColor: '#F2F2F2'}}/>
+    <Work style={{position: 'relative', backgroundColor: '#F2F2F2'}}/>
     <Interests/>
     <Contact/>
     <Footer/>
