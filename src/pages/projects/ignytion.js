@@ -7,16 +7,16 @@ import CodeSnippet from "../../components/code-snippet"
 
 function Ignytion() {
   const exampleCode = `
-  def parse(self, response):
+  def parse(self, response):                                                    # Download the page and parse its HTML 
         url = response.request.url
-        article = url[url.find('ars/') + 4:url.rfind('/')]
-        desc = response.css('p font::text').extract()
+        article = url[url.find('ars/') + 4:url.rfind('/')]                      # For this project I needed entire articles available to the public
+        desc = response.css('p font::text').extract()                           # including its summary and the entirety of the article
         text = response.css('p::text').extract()
 
         self.append_csv(article, desc, text[1:])
 
-    def append_csv(self, article, desc, text):
-        row = [article]
+    def append_csv(self, article, desc, text):                                  # When working with other developers they were often fine with me
+        row = [article]                                                         # delivering a .csv to them for them to parse as they wanted
         for d in desc:
             row.append(d)
         for item in text:
