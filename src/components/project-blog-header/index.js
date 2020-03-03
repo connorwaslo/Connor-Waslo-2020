@@ -6,7 +6,7 @@ function ProjectBlogHeader({children, img, alt}) {
   return (
     <React.Fragment>
       <div className='row my-5'>
-        <div className='col-md-4'>
+        <div className='col-md-4 my-3'>
           <img src={img} alt={alt} className={`${styles.image} ${styles.center}`}/>
         </div>
         <div className='col-md-8'>

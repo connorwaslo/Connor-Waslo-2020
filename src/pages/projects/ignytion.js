@@ -3,9 +3,32 @@ import LayoutProjectBlog from "../../components/layouts/layout-project-blog"
 import ProjectBlogHeader from "../../components/project-blog-header"
 import BlogHeader from "../../components/blog-header"
 import BlogText from "../../components/blog-text"
+import CodeSnippet from "../../components/code-snippet"
+import ProjectScreenshot from "../../components/project-screenshot"
 
 function Ignytion() {
-  // Todo: Add gatsby-remark-prismjs and show some example code from a past project
+  const exampleCode = `
+  def parse(self, response):                                                    # Download the page and parse its HTML 
+        url = response.request.url
+        article = url[url.find('ars/') + 4:url.rfind('/')]                      # For this project I needed entire articles available to the public
+        desc = response.css('p font::text').extract()                           # including its summary and the entirety of the article
+        text = response.css('p::text').extract()
+
+        self.append_csv(article, desc, text[1:])
+
+    def append_csv(self, article, desc, text):                                  # When working with other developers they were often fine with me
+        row = [article]                                                         # delivering a .csv to them for them to parse as they wanted
+        for d in desc:
+            row.append(d)
+        for item in text:
+            row.append(item)
+
+        with open('ars_info.csv', 'a', encoding='UTF-8', newline='') as out:
+            writer = csv.writer(out)
+            writer.writerow(row)
+  `;
+
+  // Todo: Add some screenshots in here
   return (
     <LayoutProjectBlog footnote={require('../../images/blog-footnotes/robot.png')}>
       <ProjectBlogHeader img={require('../../images/projects/ignytion.png')} alt='Ignytion'>
@@ -20,7 +43,7 @@ function Ignytion() {
       <BlogText>The goal of Ignytion was to build software for startups that allowed them to automate
       processes and data collection so that founders could spend their time adding value rather than
       performing repetitive tasks.</BlogText>
-      <BlogText>I worked with a few different startups in the Phoenix area and built programs ranging from
+      <BlogText>I worked with several different startups in the Phoenix area and built programs ranging from
       collecting publicly available demographic data to identifying a competitor's customers.</BlogText>
       <br/>
 
@@ -30,9 +53,11 @@ function Ignytion() {
         All of the work to code a solution simply disappeared into the jungle of documents on my computer.</BlogText>
       <BlogText>In the case that I was building a process automation solution for a startup, I often just ran it
       on my computer until it was done. The startup checked it was successful and then we went our separate ways.</BlogText>
-      <BlogText>Take this code for example. This is a snippet of a spider designed to scrape 100k's of pages.</BlogText>
+      <BlogText>Take this code for example. This is a snippet of a spider designed to scrape ~23k Arizona state statutes
+      for use by a company working to help educate Arizona citizens on their rights.</BlogText>
       <br/>
-      {/* Add the code here! */}
+
+      <CodeSnippet lang='python' code={exampleCode}/>
 
       <BlogHeader>My Takeaways</BlogHeader>
       <BlogText>Managing communication with clients is hard!</BlogText>
@@ -48,12 +73,18 @@ function Ignytion() {
       directly with successful founders was incredibly rewarding.</BlogText>
       <BlogText>I got to hear lots of stories about what did work and even more about what didn't work. Hopefully
       I'll be able to use some of that advice in the near future.</BlogText>
+      <BlogText>The startup community in Phoenix was incredibly supportive of me and it has without a doubt changed
+        the course of my future. #yesphx is the name of the community which has grown immensely in the past few years
+        and I truly can't thank the members of it enough.</BlogText>
+
+      <ProjectScreenshot src={require('../../images/blog-pics/yesphx.png')} alt='#yesphx' caption=''/>
 
       <br/>
       <BlogHeader>Where's Ignytion Now?</BlogHeader>
       <BlogText>When I got to college I decided to retire Ignytion so that I could focus on scalable ideas. But every
       once in a while I need to break out the hard skills I learned from Ignytion and scrape some data together.</BlogText>
       <BlogText>Shoot me an email if you want to chat about it!</BlogText>
+      {/* Todo: Click this link and automatically copy it to clipboard */}
       <BlogText>connor.r.waslo@vanderbilt.edu</BlogText>
     </LayoutProjectBlog>
   )
