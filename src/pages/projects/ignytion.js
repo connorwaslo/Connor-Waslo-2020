@@ -28,7 +28,6 @@ function Ignytion() {
             writer.writerow(row)
   `;
 
-  // Todo: Add some screenshots in here
   return (
     <LayoutProjectBlog footnote={require('../../images/blog-footnotes/robot.png')}>
       <ProjectBlogHeader img={require('../../images/projects/ignytion.png')} alt='Ignytion'>
@@ -85,6 +84,7 @@ function Ignytion() {
       once in a while I need to break out the hard skills I learned from Ignytion and scrape some data together.</BlogText>
       <BlogText>Shoot me an email if you want to chat about it!</BlogText>
       {/* Todo: Click this link and automatically copy it to clipboard */}
+
       <BlogText>connor.r.waslo@vanderbilt.edu</BlogText>
     </LayoutProjectBlog>
   )
