@@ -4,6 +4,7 @@ import ProjectBlogHeader from "../../components/project-blog-header"
 import BlogHeader from "../../components/blog-header"
 import BlogText from "../../components/blog-text"
 import CodeSnippet from "../../components/code-snippet"
+import ProjectScreenshot from "../../components/project-screenshot"
 
 function Ignytion() {
   const exampleCode = `
@@ -42,7 +43,7 @@ function Ignytion() {
       <BlogText>The goal of Ignytion was to build software for startups that allowed them to automate
       processes and data collection so that founders could spend their time adding value rather than
       performing repetitive tasks.</BlogText>
-      <BlogText>I worked with a few different startups in the Phoenix area and built programs ranging from
+      <BlogText>I worked with several different startups in the Phoenix area and built programs ranging from
       collecting publicly available demographic data to identifying a competitor's customers.</BlogText>
       <br/>
 
@@ -56,7 +57,7 @@ function Ignytion() {
       for use by a company working to help educate Arizona citizens on their rights.</BlogText>
       <br/>
 
-      <CodeSnippet code={exampleCode}/>
+      <CodeSnippet lang='python' code={exampleCode}/>
 
       <BlogHeader>My Takeaways</BlogHeader>
       <BlogText>Managing communication with clients is hard!</BlogText>
@@ -72,6 +73,11 @@ function Ignytion() {
       directly with successful founders was incredibly rewarding.</BlogText>
       <BlogText>I got to hear lots of stories about what did work and even more about what didn't work. Hopefully
       I'll be able to use some of that advice in the near future.</BlogText>
+      <BlogText>The startup community in Phoenix was incredibly supportive of me and it has without a doubt changed
+        the course of my future. #yesphx is the name of the community which has grown immensely in the past few years
+        and I truly can't thank the members of it enough.</BlogText>
+
+      <ProjectScreenshot src={require('../../images/blog-pics/yesphx.png')} alt='#yesphx' caption=''/>
 
       <br/>
       <BlogHeader>Where's Ignytion Now?</BlogHeader>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Prism from 'prismjs';
 
-function CodeSnippet({ code }) {
+function CodeSnippet({ lang, code }) {
   useEffect(() => {
     Prism.highlightAll();
   });
@@ -9,7 +9,7 @@ function CodeSnippet({ code }) {
   return (
     <div className='code-container'>
       <pre>
-        <code className='language-'>
+        <code className={`language-${lang}`}>
           {code}
         </code>
       </pre>
