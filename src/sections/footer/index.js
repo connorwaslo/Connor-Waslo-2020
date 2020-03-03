@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Todo: Change the scaling on gatsby depending on mobile or desktop
 function Footer() {
   return (
     <div className='row' style={{overflowX: 'hidden'}}>
@@ -10,7 +9,7 @@ function Footer() {
       <div className='col-4'>
       </div>
       <div className='col-4'>
-        <img className='mr-3' style={{maxWidth: '15%', float: 'right'}}
+        <img className='mr-3' style={{maxWidth: '15vh', float: 'right'}}
              src={require('../../images/misc/gatsby.png')} alt='gatsby'/>
       </div>
     </div>
