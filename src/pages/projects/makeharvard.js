@@ -17,6 +17,7 @@ function MakeHarvard() {
       <BlogText>Make Harvard is a hackathon which requires you to build something physical and not just software.</BlogText>
       <BlogText>My team designed and built a robotic arm which is controlled entirely by pupil motion. Our intention
       was that this could be used by those with physical disabilities to still express their creative side.</BlogText>
+
       <BlogText>I was responsible for developing the pupil-tracking part of the project. The hardest part of this was
       getting all the correct dependencies installed on my computer. From there it just took some playing around with
       pre-built eye tracking models and sending the right data to the arduinos.</BlogText>

@@ -3,27 +3,28 @@ import LayoutTextCenter from "../../components/layouts/layout-text-center"
 import SectionTitle from "../../components/section-title"
 import styles from './contact.module.css';
 
-function Contact() {
+const Image = ({link, src, alt}) => (
+  <a href={link} target='_blank'>
+    <img src={src} alt={alt} className={styles.contactImage}/>
+  </a>
+)
 
-  // Todo: Change second linkedin photo to be github
+function Contact() {
   return (
     <LayoutTextCenter>
       <SectionTitle title="Let's Link Up"/>
       <h1 className={styles.email}>connor.r.waslo@vanderbilt.edu</h1>
 
       <div className='my-4'>
-        <a href="https://www.instagram.com/connor_waslo/" target="_blank">
-          <img src={require('../../images/misc/instagram.png')} alt="instagram"
-               className={styles.contactImage}/>
-        </a>
-        <a href="https://www.linkedin.com/in/connor-waslo/" target="_blank">
-          <img src={require('../../images/misc/linkedin.png')} alt="linkedin"
-               className={styles.contactImage}/>
-        </a>
-        <a href="https://www.github.com/connorwaslo" target="_blank">
-          <img src={require('../../images/misc/linkedin.png')} alt="github"
-               className={styles.contactImage}/>
-        </a>
+        <Image link='https://www.instagram.com/connor_waslo/'
+               src={require('../../images/misc/instagram.png')}
+               alt='instagram'/>
+        <Image link='https://www.linkedin.com/in/connor-waslo/'
+               src={require('../../images/misc/linkedin.png')}
+               alt='linkedin'/>
+        <Image link='https://www.github.com/connorwaslo'
+               src={require('../../images/misc/github.png')}
+               alt='github'/>
       </div>
     </LayoutTextCenter>
   )
