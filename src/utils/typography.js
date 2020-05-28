@@ -1,11 +1,11 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '12px',
-  baseLineHeight: 1.45,
-  fontWeight: 200,
-  headerFontFamily: ['Tajawal', 'sans-serif'],
-  bodyFontFamily: ['Tajawal', 'sans-serif']
+  baseFontSize: '16px',
+  baseLineHeight: 1.50,
+  fontWeight: 400,
+  headerFontFamily: ['Poppins', 'sans-serif'],
+  bodyFontFamily: ['Poppins', 'sans-serif']
 });
 
 typography.injectStyles();

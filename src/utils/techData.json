@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "name": "reactjs",
+      "id": "React.js",
+      "val": 10
+    },
+    {
+      "name": "gatsbyjs",
+      "id": "Gatsby.js",
+      "val": 6
+    },
+    {
+      "name": "expressjs",
+      "id": "Express.js",
+      "val": 3
+    },
+    {
+      "name": "reactnative",
+      "id": "React-Native",
+      "val": 10
+    },
+    {
+      "name": "expo",
+      "id": "Expo",
+      "val": 8
+    },
+    {
+      "name": "js",
+      "id": "JavaScript",
+      "val": 9
+    },
+    {
+      "name": "html",
+      "id": "HTML",
+      "val": 5
+    },
+    {
+      "name": "css",
+      "id": "CSS",
+      "val": 5
+    },
+    {
+      "name": "python",
+      "id": "Python",
+      "val": 8
+    },
+    {
+      "name": "scrapy",
+      "id": "Scrapy",
+      "val": 7
+    },
+    {
+      "name": "selenium",
+      "id": "Selenium",
+      "val": 7
+    },
+    {
+      "name": "tensorflow",
+      "id": "Tensorflow",
+      "val": 6
+    },
+    {
+      "name": "pandas",
+      "id": "pandas",
+      "val": 6
+    },
+    {
+      "name": "numpy",
+      "id": "numpy",
+      "val": 6
+    },
+    {
+      "name": "r",
+      "id": "R",
+      "val": 5
+    },
+    {
+      "name": "cpp",
+      "id": "C++",
+      "val": 8
+    }
+  ],
+  "links": [
+    {
+      "source": "React.js",
+      "target": "Express.js"
+    },
+    {
+      "source": "JavaScript",
+      "target": "React.js"
+    },
+    {
+      "source": "JavaScript",
+      "target": "Express.js"
+    },
+    {
+      "source": "JavaScript",
+      "target": "React-Native"
+    },
+    {
+      "source": "React-Native",
+      "target": "Expo"
+    },
+    {
+      "source": "JavaScript",
+      "target": "Expo"
+    },
+    {
+      "source": "JavaScript",
+      "target": "Gatsby.js"
+    },
+    {
+      "source": "HTML",
+      "target": "JavaScript"
+    },
+    {
+      "source": "HTML",
+      "target": "CSS"
+    },
+    {
+      "source": "CSS",
+      "target": "JavaScript"
+    },
+    {
+      "source": "Selenium",
+      "target": "HTML"
+    },
+    {
+      "source": "Selenium",
+      "target": "CSS"
+    },
+    {
+      "source": "Scrapy",
+      "target": "HTML"
+    },
+    {
+      "source": "Scrapy",
+      "target": "CSS"
+    },
+    {
+      "source": "Scrapy",
+      "target": "JavaScript"
+    },
+    {
+      "source": "Scrapy",
+      "target": "Selenium"
+    },
+    {
+      "source": "Python",
+      "target": "Scrapy"
+    },
+    {
+      "source": "Python",
+      "target": "R"
+    },
+    {
+      "source": "Python",
+      "target": "C++"
+    },
+    {
+      "source": "Python",
+      "target": "Tensorflow"
+    },
+    {
+      "source": "Python",
+      "target": "pandas"
+    },
+    {
+      "source": "Python",
+      "target": "numpy"
+    },
+    {
+      "source": "pandas",
+      "target": "Tensorflow"
+    },
+    {
+      "source": "numpy",
+      "target": "pandas"
+    },
+    {
+      "source": "numpy",
+      "target": "Tensorflow"
+    }
+  ]
+}

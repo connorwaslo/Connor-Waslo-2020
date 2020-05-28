@@ -5,6 +5,7 @@ module.exports = {
     author: `@connorwaslo`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -29,8 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: "src/utils/typography.js",
-        omitGoogleFont: true
+        pathToConfigModule: "src/utils/typography.js"
       }
     },
     {
@@ -38,11 +38,11 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Tajawal`,
-            variants: [`300`, `400`]
-          }
-        ]
-      }
+            family: `Poppins`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

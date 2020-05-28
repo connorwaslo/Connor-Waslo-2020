@@ -1,22 +1,21 @@
 import React from "react"
-import Intro from '../sections/intro';
-import About from '../sections/about';
-import Projects from '../sections/projects';
-import Work from "../sections/work"
-import Interests from "../sections/interests"
-import Contact from "../sections/contact/contact"
-import Footer from "../sections/footer"
+import PageLayout from "../components/layouts/pageLayout"
+import Intro from '../components/intro'
+import About from "../components/about"
+import Projects from "../components/projects"
+import TechGraph from "../components/techGraph"
+import Experience from "../components/experience"
+import Contact from "../components/contact"
 
 const IndexPage = () => (
-  <div>
+  <PageLayout>
     <Intro/>
-    <About bgColor='#F2F2F2'/>
+    <About/>
     <Projects/>
-    <Work style={{position: 'relative', backgroundColor: '#F2F2F2'}}/>
-    <Interests/>
+    <TechGraph/>
+    <Experience/>
     <Contact/>
-    <Footer/>
-  </div>
+  </PageLayout>
 )
 
 export default IndexPage
