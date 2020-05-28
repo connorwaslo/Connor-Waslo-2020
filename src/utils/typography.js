@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: '16px',
   baseLineHeight: 1.50,
   fontWeight: 400,
-  headerFontFamily: ['Poppins', 'Times', 'sans-serif'],
+  headerFontFamily: ['Poppins', 'sans-serif'],
   bodyFontFamily: ['Poppins', 'sans-serif']
 });
 

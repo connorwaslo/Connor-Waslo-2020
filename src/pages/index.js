@@ -1,22 +1,26 @@
 import React from "react"
-import Intro from '../sections/intro';
-import About from '../sections/about';
-import Projects from '../sections/projects';
-import Work from "../sections/work"
-import Interests from "../sections/interests"
-import Contact from "../sections/contact/contact"
-import Footer from "../sections/footer"
+import PageLayout from "../components/layouts/pageLayout"
+import { TitleContainer, ContentContainer } from "../components/containers"
+import { MainTitle } from "../components/typography"
+import theme from "../styles/theme"
 
 const IndexPage = () => (
-  <div>
-    <Intro/>
-    <About bgColor='#F2F2F2'/>
-    <Projects/>
-    <Work style={{position: 'relative', backgroundColor: '#F2F2F2'}}/>
-    <Interests/>
-    <Contact/>
-    <Footer/>
-  </div>
+  <PageLayout>
+    <ContentContainer>
+      <TitleContainer>
+        <MainTitle style={{ marginBottom: theme.spacing(20)}}>
+          Hi<span style={{ color: theme.palette.accents.green }}>.</span>
+        </MainTitle>
+        <MainTitle>
+          I'm Connor Waslo
+          <span style={{ color: theme.palette.accents.green }}>.</span>
+        </MainTitle>
+        <MainTitle color={theme.palette.text.light}>
+          I'm passionate about creating products that help people be creative.
+        </MainTitle>
+      </TitleContainer>
+    </ContentContainer>
+  </PageLayout>
 )
 
 export default IndexPage
