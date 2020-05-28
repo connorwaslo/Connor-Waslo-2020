@@ -14,7 +14,7 @@ const PicColumn = styled(Grid.Column).attrs(props => ({
   }
 `
 
-function Project({ pic, title, description, link }) {
+function Project({ pic, title, description, timeline, link, color }) {
   return (
     <Grid stackable>
       <PicColumn width={6}>
@@ -22,8 +22,9 @@ function Project({ pic, title, description, link }) {
       </PicColumn>
       <Grid.Column width={10}>
         <ProjectTitle>{title}</ProjectTitle>
-        <ProjectBody>{description}</ProjectBody>
-        <ProjectLink href={link}>Read More</ProjectLink>
+        {timeline && <ProjectBody color={color} style={{ fontStyle: 'italic' }}>{timeline}</ProjectBody>}
+        <ProjectBody color={color}>{description}</ProjectBody>
+        <ProjectLink color={color} href={link}>Read More</ProjectLink>
       </Grid.Column>
     </Grid>
   )

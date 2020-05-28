@@ -48,7 +48,7 @@ export const ProjectBody = styled.p`
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: ${({ theme }) => theme.palette.text.detailLight};
+  color: ${({ color, theme }) => color ? color : theme.palette.text.detailLight};
    
   @media ${minDevice.tablet} {
     font-size: 18px;
@@ -64,7 +64,7 @@ export const ProjectLink = styled.a.attrs(() => ({
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: ${({ theme }) => theme.palette.text.main};
+  color: ${({ color, theme }) => color ? color : theme.palette.text.main};
    
   @media ${minDevice.tablet} {
     font-size: 18px;

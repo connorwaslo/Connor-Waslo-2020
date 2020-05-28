@@ -4,6 +4,7 @@ import Intro from '../components/intro'
 import About from "../components/about"
 import Projects from "../components/projects"
 import TechGraph from "../components/techGraph"
+import Experience from "../components/experience"
 
 const IndexPage = () => (
   <PageLayout>
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <About/>
     <Projects/>
     <TechGraph/>
+    <Experience/>
   </PageLayout>
 )
 
