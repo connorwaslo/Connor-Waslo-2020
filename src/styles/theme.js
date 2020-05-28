@@ -1,5 +1,8 @@
 const theme = {
   palette: {
+    backgrounds: {
+      main: '#F9F9F9'
+    },
     accents: {
       green: '#29AF84',
       purple: '#654FCC'
