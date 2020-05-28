@@ -12,7 +12,7 @@ export const TitleContainer = styled.div`
   padding: ${({ theme }) => theme.spacing(12)} 0;
 
   @media ${minDevice.laptop} {
-    max-width: 85%;
+    max-width: 70%;
   }
 `
 

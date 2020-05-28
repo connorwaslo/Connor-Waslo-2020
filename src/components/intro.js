@@ -16,7 +16,7 @@ function Intro() {
             <span style={{ color: theme.palette.accents.green }}>.</span>
           </MainTitle>
           <MainTitle color={theme.palette.text.light}>
-            I'm passionate about creating products that help people be creative.
+            I'm passionate about creating products that make life easier.
           </MainTitle>
         </TitleContainer>
       </ContentContainer>
