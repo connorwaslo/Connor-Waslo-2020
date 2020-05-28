@@ -7,6 +7,7 @@ import { Button } from "semantic-ui-react"
 const FormInput = styled.input`
   background: ${({ theme }) => theme.palette.backgrounds.input};
   border: none;
+  border-radius: 4px;
   width: 100%;
   height: ${({ theme }) => theme.spacing(12)};
   padding: ${({ theme }) => theme.spacing(4)};
