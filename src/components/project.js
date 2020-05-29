@@ -3,22 +3,24 @@ import styled from 'styled-components'
 import { Grid } from 'semantic-ui-react'
 import { ProjectTitle, ProjectBody, ProjectLink } from "./typography"
 import { minDevice } from "../utils/devices"
+import theme from '../styles/theme'
 
 const PicColumn = styled(Grid.Column).attrs(props => ({
   width: props.width
 }))`
   text-align: left;
+  max-width: 80vw;
   
   @media ${minDevice.tablet} {
     text-align: center;
   }
 `
 
-function Project({ pic, title, description, timeline, link, color }) {
+function Project({ pic, title, description, timeline, link, color, borderRadius }) {
   return (
-    <Grid stackable>
+    <Grid stackable style={{ marginBottom: theme.spacing(8) }}>
       <PicColumn width={6}>
-        <img src={pic} alt='project' style={{ padding: 0, margin: 0 }}/>
+        <img src={pic} alt='project' style={{ padding: 0, margin: 0, maxWidth: '80%', borderRadius: borderRadius ? borderRadius : 0 }}/>
       </PicColumn>
       <Grid.Column width={10}>
         <ProjectTitle>{title}</ProjectTitle>

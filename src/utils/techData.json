@@ -1,82 +1,82 @@
 {
   "nodes": [
     {
-      "name": "reactjs",
+      "name": "Frontend web framework",
       "id": "React.js",
       "val": 10
     },
     {
-      "name": "gatsbyjs",
+      "name": "How I built this website",
       "id": "Gatsby.js",
       "val": 6
     },
     {
-      "name": "expressjs",
+      "name": "Backend APIs",
       "id": "Express.js",
       "val": 3
     },
     {
-      "name": "reactnative",
+      "name": "Mobile app development",
       "id": "React-Native",
       "val": 10
     },
     {
-      "name": "expo",
+      "name": "Makes mobile app development even easier",
       "id": "Expo",
       "val": 8
     },
     {
-      "name": "js",
+      "name": "The backbone of the internet",
       "id": "JavaScript",
       "val": 9
     },
     {
-      "name": "html",
+      "name": "<p>internet</p>",
       "id": "HTML",
       "val": 5
     },
     {
-      "name": "css",
+      "name": "Makes the internet pretty",
       "id": "CSS",
       "val": 5
     },
     {
-      "name": "python",
+      "name": "I mostly use it for data analysis",
       "id": "Python",
       "val": 8
     },
     {
-      "name": "scrapy",
+      "name": "Automate data collection",
       "id": "Scrapy",
       "val": 7
     },
     {
-      "name": "selenium",
+      "name": "Automate web processes",
       "id": "Selenium",
       "val": 7
     },
     {
-      "name": "tensorflow",
+      "name": "Literally AI",
       "id": "Tensorflow",
       "val": 6
     },
     {
-      "name": "pandas",
+      "name": "Puts things in pretty boxes for AI",
       "id": "pandas",
       "val": 6
     },
     {
-      "name": "numpy",
+      "name": "Makes those pretty boxes for AI more accessible",
       "id": "numpy",
       "val": 6
     },
     {
-      "name": "r",
+      "name": "Data analysis but easier",
       "id": "R",
       "val": 5
     },
     {
-      "name": "cpp",
+      "name": "I hate this language but have to use it for school",
       "id": "C++",
       "val": 8
     }

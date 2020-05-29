@@ -72,7 +72,7 @@ export const ProjectLink = styled.a.attrs(() => ({
   }
   
   &&:hover {
-    color: ${({ theme }) => theme.palette.text.main};
+    color: ${({ color, theme }) => color ? color : theme.palette.text.main};
     text-decoration: underline;
   }
 `
