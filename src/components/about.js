@@ -27,6 +27,7 @@ function About() {
         <AboutPoint emoji='‍‍👨‍💻‍‍' text='Software engineer looking from the business perspective'/>
         <AboutPoint emoji='🏃‍♂' text='Aspiring marathoner'/>
         <AboutPoint emoji='👨‍🍳' text='Plant-based wannabe-chef'/>
+        <AboutPoint emoji='🗣️' text='Avid storyteller'/>
         <AboutPoint emoji='🏀' text='Phoenix Suns ride or die'/>
       </ContentGrid>
     </SectionContainer>

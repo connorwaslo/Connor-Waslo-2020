@@ -40,7 +40,7 @@ const SwooshContainer = styled.div`
 export const SectionContainer = ({ swoosh, swooshColor, background, children }) => {
   function renderSwoosh() {
     return (
-      <Responsive minWidth={size.tablet}>
+      <Responsive minWidth={size.laptop}>
         <SwooshContainer swooshColor={swooshColor}>
           <svg fill={swooshColor} opacity="1" width="100%" height="100" viewBox="0 0 4.66666 0.333331"
                preserveAspectRatio="none" transform="scale(-1, 1)">
@@ -54,12 +54,12 @@ export const SectionContainer = ({ swoosh, swooshColor, background, children }) 
 
   return (
     <div style={{ background: background}}>
-      <Responsive maxWidth={size.tablet - 1}>
+      <Responsive maxWidth={size.laptop - 1}>
         <Padding vertical={theme.spacing(12)} horizontal={0}>
           {children}
         </Padding>
       </Responsive>
-      <Responsive minWidth={size.tablet}>
+      <Responsive minWidth={size.laptop}>
         {children}
         {swoosh && renderSwoosh()}
       </Responsive>

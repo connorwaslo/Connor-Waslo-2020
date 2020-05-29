@@ -1,10 +1,10 @@
 import React from 'react';
-import LayoutProjectBlog from "../../components/layouts/layout-project-blog"
-import ProjectBlogHeader from "../../components/project-blog-header"
-import BlogHeader from "../../components/blog-header"
-import BlogText from "../../components/blog-text"
-import CodeSnippet from "../../components/code-snippet"
-import ProjectScreenshot from "../../components/project-screenshot"
+import LayoutProjectBlog from "../components/layouts/layout-project-blog"
+import ProjectBlogHeader from "../components/project-blog-header"
+import BlogHeader from "../components/blog-header"
+import BlogText from "../components/blog-text"
+import CodeSnippet from "../components/code-snippet"
+import ProjectScreenshot from "../components/project-screenshot"
 
 function Ignytion() {
   const exampleCode = `
@@ -29,8 +29,8 @@ function Ignytion() {
   `;
 
   return (
-    <LayoutProjectBlog footnote={require('../../images/blog-footnotes/robot.png')}>
-      <ProjectBlogHeader img={require('../../images/projects/ignytion.png')} alt='Ignytion'>
+    <LayoutProjectBlog footnote={require('../images/blog-footnotes/robot.png')}>
+      <ProjectBlogHeader img={require('../images/projects/ignytion.png')} alt='Ignytion'>
         <h1 className='display-3'>Ignytion</h1>
         <h1><i>July 2018 - October 2018</i></h1>
       </ProjectBlogHeader>
@@ -76,7 +76,7 @@ function Ignytion() {
         the course of my future. #yesphx is the name of the community which has grown immensely in the past few years
         and I truly can't thank the members of it enough.</BlogText>
 
-      <ProjectScreenshot src={require('../../images/blog-pics/yesphx.png')} alt='#yesphx' caption=''/>
+      <ProjectScreenshot src={require('../images/blog-pics/yesphx.png')} alt='#yesphx' caption=''/>
 
       <br/>
       <BlogHeader>Where's Ignytion Now?</BlogHeader>

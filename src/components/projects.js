@@ -16,15 +16,15 @@ function Projects() {
         <Project pic={require('../images/projects/uvo.png')}
                  title='Unheard Voices Outreach'
                  description='Building a mobile app to provide resources and mentorship to formerly incarcerated individuals.'
-                 link=''/>
+                 link='/unheard-voices-outreach'/>
         <Project pic={require('../images/projects/v.png')}
                  title='Athena'
                  description='Revamping course registration at Vanderbilt University - a platform based on student input.'
-                 link=''/>
+                 link='/course-registration'/>
         <Project pic={require('../images/projects/ignytion.png')}
                  title='Ignytion'
                  description='A company I founded which provided data and web automation services to growth-stage startups.'
-                 link=''/>
+                 link='/ignytion'/>
       </ContentGrid>
     </SectionContainer>
   )

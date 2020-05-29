@@ -58,7 +58,28 @@ export const ProjectBody = styled.p`
   }
 `
 
-export const ProjectLink = styled.a.attrs(() => ({
+export const ProjectRef = styled.a.attrs(() => ({
+  target: '_blank'
+}))`
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: ${({ color, theme }) => color ? color : theme.palette.text.main};
+   
+  @media ${minDevice.tablet} {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  
+  &&:hover {
+    color: ${({ color, theme }) => color ? color : theme.palette.text.main};
+    text-decoration: underline;
+  }
+`
+
+export const ProjectLink = styled(Link).attrs(() => ({
   target: '_blank'
 }))`
   text-decoration: underline;

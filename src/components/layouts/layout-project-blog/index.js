@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'gatsby';
+import { ContentContainer } from "../../containers"
 import styles from './layout-project-blog.module.css';
+import { ThemeProvider } from "styled-components"
+import theme from '../../../styles/theme'
 
 const BackArrow = () => (
   <Link to='/'>
@@ -13,11 +16,13 @@ const BackArrow = () => (
 
 function LayoutProjectBlog({children, footnote, style}) {
   return (
-    <div className={`container pb-5 mb-5 ${styles.blogMargins}`} style={style}>
-      <BackArrow/>
-      {children}
-      <img className='mt-5' src={footnote} alt={''} style={{width: '10vh', height: '10vh'}}/>
-    </div>
+    <ThemeProvider theme={theme}>
+      <ContentContainer style={style}>
+        <BackArrow/>
+        {children}
+        <img src={footnote} alt={''} style={{width: '10vh', height: '10vh'}}/>
+      </ContentContainer>
+    </ThemeProvider>
   )
 }
 
