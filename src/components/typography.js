@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { minDevice } from "../utils/devices"
 
 export const MainTitle = styled.h1`
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size; 36px;
@@ -19,6 +20,7 @@ export const MainTitle = styled.h1`
 `
 
 export const AboutText = styled.h3`
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -33,19 +35,21 @@ export const AboutText = styled.h3`
 `
 
 export const ProjectTitle = styled.h4`
-   font-style: normal;
-   font-weight: bold;
-   font-size: 21px;
-   line-height: 24px;
-   color: ${props => props.color ? props.color : 'inherit'};
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+  color: ${props => props.color ? props.color : 'inherit'};
    
-   @media ${minDevice.tablet} {
+  @media ${minDevice.tablet} {
     font-size: 24px;
     line-height: 28px;
   }
 `
 
 export const ProjectBody = styled.p`
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -61,6 +65,7 @@ export const ProjectBody = styled.p`
 export const ProjectRef = styled.a.attrs(() => ({
   target: '_blank'
 }))`
+  font-family: Poppins, sans-serif;
   text-decoration: underline;
   font-style: normal;
   font-weight: normal;
@@ -82,6 +87,7 @@ export const ProjectRef = styled.a.attrs(() => ({
 export const ProjectLink = styled(Link).attrs(() => ({
   target: '_blank'
 }))`
+  font-family: Poppins, sans-serif;
   text-decoration: underline;
   font-style: normal;
   font-weight: normal;
@@ -97,5 +103,34 @@ export const ProjectLink = styled(Link).attrs(() => ({
   &&:hover {
     color: ${({ color, theme }) => color ? color : theme.palette.text.main};
     text-decoration: underline;
+  }
+`
+
+export const BlogHeader = styled.h2`
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size; 28px;
+  line-height: 34px;
+  color: ${props => props.color ? props.color : 'inherit'};  
+  
+  @media ${minDevice.laptop} {
+    font-size: 32px;
+    line-height: 36PX;
+  }
+`
+
+export const BlogText = styled.p`
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size; 18px;
+  line-height: 24px;
+  color: ${props => props.color ? props.color : 'inherit'};
+  
+  
+  @media ${minDevice.laptop} {
+    font-size: 21px;
+    line-height: 28px;
   }
 `
