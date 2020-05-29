@@ -1,8 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { size, minDevice, maxDevice } from '../utils/devices'
+import theme from '../styles/theme'
 
 import { Responsive } from 'semantic-ui-react'
+
+export const Padding = styled.div`
+  padding: ${props => props.vertical}  ${props => props.horizontal};
+`
 
 export const TitleContainer = styled.div`
   @media ${maxDevice.tablet} {
@@ -49,8 +54,15 @@ export const SectionContainer = ({ swoosh, swooshColor, background, children }) 
 
   return (
     <div style={{ background: background}}>
-      {children}
-      {swoosh && renderSwoosh()}
+      <Responsive maxWidth={size.tablet - 1}>
+        <Padding vertical={theme.spacing(12)} horizontal={0}>
+          {children}
+        </Padding>
+      </Responsive>
+      <Responsive minWidth={size.tablet}>
+        {children}
+        {swoosh && renderSwoosh()}
+      </Responsive>
     </div>
   )
 }

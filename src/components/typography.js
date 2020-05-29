@@ -9,8 +9,10 @@ export const MainTitle = styled.h1`
   line-height: 44px;
   color: ${props => props.color ? props.color : 'inherit'};
   margin: 0;
+  word-wrap: normal;
   
-  @media ${minDevice.tablet} {
+  
+  @media ${minDevice.laptop} {
     font-size: 44px;
     line-height: 60px;
   }
