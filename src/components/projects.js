@@ -19,7 +19,7 @@ function Projects() {
                  link=''/>
         <Project pic='https://via.placeholder.com/150'
                  title='Athena'
-                 description='Revamping course registration at Vanderbilt University - building a platform based on student input.'
+                 description='Revamping course registration at Vanderbilt University - a platform based on student input.'
                  link=''/>
         <Project pic='https://via.placeholder.com/150'
                  title='Ignytion'
