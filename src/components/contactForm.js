@@ -69,14 +69,20 @@ function ContactForm() {
     <form name="Contact Form" method="post" data-netlify="true" onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="Contact Form" />
 
-      <FormLabel>Name</FormLabel>
-      <FormInput type="text" name="name" onChange={handleChange}/>
+      <FormLabel>
+        Name
+        <FormInput type="text" name="name" onChange={handleChange}/>
+      </FormLabel>
 
-      <FormLabel>Email</FormLabel>
-      <FormInput type="email" name="email" onChange={handleChange}/>
+      <FormLabel>
+        Email
+        <FormInput type="email" name="email" onChange={handleChange}/>
+      </FormLabel>
 
-      <FormLabel>Message</FormLabel>
-      <FormInput name="message" onChange={handleChange}/>
+      <FormLabel>
+        Message
+        <FormInput name="message" onChange={handleChange}/>
+      </FormLabel>
 
       <SubmitButton type="submit">Send</SubmitButton>
     </form>
