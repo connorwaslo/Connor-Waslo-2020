@@ -5,7 +5,7 @@ import { ProjectBody, MainTitle } from "../typography"
 import { ThemeProvider } from "styled-components"
 import theme from '../../styles/theme'
 
-function BlogLayout({ pic, title, timeline, description, borderRadius, children }) {
+function BlogLayout({ pic, title, timeline, description, footnote, borderRadius, children }) {
   return (
     <ThemeProvider theme={theme}>
       <BlogContainer>
@@ -27,6 +27,8 @@ function BlogLayout({ pic, title, timeline, description, borderRadius, children 
         <Padding vertical={theme.spacing(24)} horizontal={0}>
           {children}
         </Padding>
+
+        <img src={footnote} alt='Footnote' style={{ width: '5vh' }}/>
       </BlogContainer>
     </ThemeProvider>
   )
