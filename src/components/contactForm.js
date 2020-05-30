@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { navigate } from 'gatsby'
 import styled from 'styled-components'
 import { minDevice } from "../utils/devices"
-import { Button } from "semantic-ui-react"
+import { Button } from '@material-ui/core'
 
 const FormInput = styled.input`
   background: ${({ theme }) => theme.palette.backgrounds.input};
@@ -24,7 +24,7 @@ const FormLabel = styled.label`
   line-height: 16px;
   color: ${({ theme }) => theme.palette.text.main};
   
-  @media ${minDevice.laptopL} {
+  @media ${minDevice.lgL} {
     font-size: 16px;
     line-height: 18px;
   }

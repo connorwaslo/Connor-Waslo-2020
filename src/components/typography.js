@@ -13,7 +13,7 @@ export const MainTitle = styled.h1`
   word-wrap: normal;
   
   
-  @media ${minDevice.laptop} {
+  @media ${minDevice.md} {
     font-size: 44px;
     line-height: 60px;
   }
@@ -28,7 +28,7 @@ export const AboutText = styled.h3`
   color: ${props => props.color ? props.color : 'inherit'};
   margin-bottom: ${({ theme }) => theme.spacing(8)};
    
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     font-size: 21px;
     line-height: 26px;
   }
@@ -38,13 +38,18 @@ export const ProjectTitle = styled.h4`
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 28px;
   color: ${props => props.color ? props.color : 'inherit'};
    
-  @media ${minDevice.tablet} {
-    font-size: 24px;
-    line-height: 28px;
+  @media ${minDevice.sm} {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  @media ${minDevice.md} {
+    font-size: 30px;
+    line-height: 34px;
   }
 `
 
@@ -52,14 +57,9 @@ export const ProjectBody = styled.p`
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 21px;
   color: ${({ color, theme }) => color ? color : theme.palette.text.detailLight};
-   
-  @media ${minDevice.tablet} {
-    font-size: 18px;
-    line-height: 21px;
-  }
 `
 
 export const ProjectRef = styled.a.attrs(() => ({
@@ -69,14 +69,9 @@ export const ProjectRef = styled.a.attrs(() => ({
   text-decoration: underline;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 21px;
   color: ${({ color, theme }) => color ? color : theme.palette.text.main};
-   
-  @media ${minDevice.tablet} {
-    font-size: 18px;
-    line-height: 21px;
-  }
   
   &&:hover {
     color: ${({ color, theme }) => color ? color : theme.palette.text.main};
@@ -91,14 +86,9 @@ export const ProjectLink = styled(Link).attrs(() => ({
   text-decoration: underline;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 21px;
   color: ${({ color, theme }) => color ? color : theme.palette.text.main};
-   
-  @media ${minDevice.tablet} {
-    font-size: 18px;
-    line-height: 21px;
-  }
   
   &&:hover {
     color: ${({ color, theme }) => color ? color : theme.palette.text.main};
@@ -114,7 +104,7 @@ export const BlogHeader = styled.h2`
   line-height: 34px;
   color: ${props => props.color ? props.color : 'inherit'};  
   
-  @media ${minDevice.laptop} {
+  @media ${minDevice.lg} {
     font-size: 32px;
     line-height: 36PX;
   }
@@ -129,7 +119,7 @@ export const BlogText = styled.p`
   color: ${props => props.color ? props.color : 'inherit'};
   
   
-  @media ${minDevice.laptop} {
+  @media ${minDevice.lg} {
     font-size: 21px;
     line-height: 28px;
   }
