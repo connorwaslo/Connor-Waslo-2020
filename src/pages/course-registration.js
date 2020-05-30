@@ -8,6 +8,7 @@ function CourseRegistration() {
   return (
     <BlogLayout pic={require('../images/projects/v.png')}
                 title='Athena'
+                timeline='June - November 2019'
                 description='Revamping course registration at Vanderbilt University - a platform based on student input.'
                 footnote={require('../images/blog-footnotes/pillar.png')}>
       <SEO title='Athena'/>
