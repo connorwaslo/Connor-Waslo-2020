@@ -13,7 +13,7 @@ export const MainTitle = styled.h1`
   word-wrap: normal;
   
   
-  @media ${minDevice.laptop} {
+  @media ${minDevice.lg} {
     font-size: 44px;
     line-height: 60px;
   }
@@ -28,7 +28,7 @@ export const AboutText = styled.h3`
   color: ${props => props.color ? props.color : 'inherit'};
   margin-bottom: ${({ theme }) => theme.spacing(8)};
    
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     font-size: 21px;
     line-height: 26px;
   }
@@ -42,7 +42,7 @@ export const ProjectTitle = styled.h4`
   line-height: 24px;
   color: ${props => props.color ? props.color : 'inherit'};
    
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     font-size: 24px;
     line-height: 28px;
   }
@@ -56,7 +56,7 @@ export const ProjectBody = styled.p`
   line-height: 20px;
   color: ${({ color, theme }) => color ? color : theme.palette.text.detailLight};
    
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     font-size: 18px;
     line-height: 21px;
   }
@@ -73,7 +73,7 @@ export const ProjectRef = styled.a.attrs(() => ({
   line-height: 20px;
   color: ${({ color, theme }) => color ? color : theme.palette.text.main};
    
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     font-size: 18px;
     line-height: 21px;
   }
@@ -95,7 +95,7 @@ export const ProjectLink = styled(Link).attrs(() => ({
   line-height: 20px;
   color: ${({ color, theme }) => color ? color : theme.palette.text.main};
    
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     font-size: 18px;
     line-height: 21px;
   }
@@ -114,7 +114,7 @@ export const BlogHeader = styled.h2`
   line-height: 34px;
   color: ${props => props.color ? props.color : 'inherit'};  
   
-  @media ${minDevice.laptop} {
+  @media ${minDevice.lg} {
     font-size: 32px;
     line-height: 36PX;
   }
@@ -129,7 +129,7 @@ export const BlogText = styled.p`
   color: ${props => props.color ? props.color : 'inherit'};
   
   
-  @media ${minDevice.laptop} {
+  @media ${minDevice.lg} {
     font-size: 21px;
     line-height: 28px;
   }

@@ -24,7 +24,7 @@ const FormLabel = styled.label`
   line-height: 16px;
   color: ${({ theme }) => theme.palette.text.main};
   
-  @media ${minDevice.laptopL} {
+  @media ${minDevice.lgL} {
     font-size: 16px;
     line-height: 18px;
   }

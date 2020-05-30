@@ -10,23 +10,23 @@ export const Padding = styled.div`
 `
 
 export const TitleContainer = styled.div`
-  @media ${maxDevice.tablet} {
+  @media ${maxDevice.md} {
     padding: ${({ theme }) => theme.spacing(20)} 0;
   } 
   
   padding: ${({ theme }) => theme.spacing(12)} 0;
 
-  @media ${minDevice.laptop} {
+  @media ${minDevice.lg} {
     max-width: 70%;
   }
 `
 
 export const ContentContainer = styled.div`
-  @media ${maxDevice.tablet - 1} {
-    padding: ${({ theme }) => theme.spacing(4)};
+  @media ${maxDevice.md} {
+    padding: ${({ theme }) => theme.spacing(8)};
   }
   
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     padding: ${({ theme }) => theme.spacing(16)} ${({ theme }) => theme.spacing(30)};
   }
 `
@@ -52,12 +52,12 @@ export const SectionContainer = ({ swoosh, swooshColor, background, children }) 
 
   return (
     <div style={{ background: background}}>
-      <Responsive maxWidth={size.laptop - 1}>
+      <Responsive maxWidth={size.lg - 1}>
         <Padding vertical={theme.spacing(12)} horizontal={0}>
           {children}
         </Padding>
       </Responsive>
-      <Responsive minWidth={size.laptop}>
+      <Responsive minWidth={size.lg}>
         {children}
         {swoosh && renderSwoosh()}
       </Responsive>
@@ -66,11 +66,11 @@ export const SectionContainer = ({ swoosh, swooshColor, background, children }) 
 }
 
 export const BlogContainer = styled.div`
-  @media ${maxDevice.tablet - 1} {
+  @media ${maxDevice.md - 1} {
     padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(24)};
   }
   
-  @media ${minDevice.tablet} {
+  @media ${minDevice.md} {
     padding: ${({ theme }) => theme.spacing(16)} ${({ theme }) => theme.spacing(32)};
   }
 `
