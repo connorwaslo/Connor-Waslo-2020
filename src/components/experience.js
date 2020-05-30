@@ -14,20 +14,20 @@ function Experience() {
                  timeline='April 2020 - Present'
                  description='Frontend web developer using React.js to build a marketplace supporting COVID affected businesses.'
                  color={theme.palette.backgrounds.main}
-                 link=''/>
+                 link='/support-local'/>
         <Project pic={require('../images/projects/rgp_padded.png')}
                  title='RGP Consulting'
-                 timeline='June 2020 - Present'
-                 description='Product management internship developing an internal web app.'
+                 timeline='August 2019 - Present'
+                 description='Product management intern developing an internal app.'
                  color={theme.palette.backgrounds.main}
                  borderRadius={4}
-                 link=''/>
+                 link='/rgp-consulting'/>
         <Project pic={require('../images/projects/hostmost.svg')}
                  title='hostmost'
                  timeline='June - August 2019'
                  description='Product & sales intern helping a startup find product-market fit.'
                  color={theme.palette.backgrounds.main}
-                 link=''/>
+                 link='/hostmost'/>
       </ContentGrid>
     </SectionContainer>
   )
