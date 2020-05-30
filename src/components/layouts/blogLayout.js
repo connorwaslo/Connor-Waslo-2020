@@ -1,7 +1,6 @@
 import React from 'react'
 import { BlogContainer, Padding } from '../containers'
 import { Grid } from '@material-ui/core'
-// import { Grid } from 'semantic-ui-react'
 import { ProjectBody, MainTitle } from "../typography"
 import { ThemeProvider } from "styled-components"
 import theme from '../../styles/theme'

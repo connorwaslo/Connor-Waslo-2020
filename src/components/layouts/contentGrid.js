@@ -1,6 +1,5 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-// import { Grid } from "semantic-ui-react"
 import { MainTitle } from "../typography"
 import { ContentContainer } from "../containers"
 

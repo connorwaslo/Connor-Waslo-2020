@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { size, minDevice, maxDevice } from '../utils/devices'
+import { minDevice, maxDevice } from '../utils/devices'
 import theme from '../styles/theme'
 
-import { Responsive } from 'semantic-ui-react'
+import { Hidden } from "@material-ui/core"
 
 export const Padding = styled.div`
   padding: ${props => props.vertical}  ${props => props.horizontal};
@@ -52,7 +52,16 @@ export const SectionContainer = ({ swoosh, swooshColor, background, children }) 
 
   return (
     <div style={{ background: background}}>
-      <Responsive maxWidth={size.lg - 1}>
+      <Hidden lgUp>
+        <Padding vertical={theme.spacing(12)} horizontal={0}>
+          {children}
+        </Padding>
+      </Hidden>
+      <Hidden mdDown>
+        {children}
+        {swoosh && renderSwoosh()}
+      </Hidden>
+      {/*<Responsive maxWidth={size.lg - 1}>
         <Padding vertical={theme.spacing(12)} horizontal={0}>
           {children}
         </Padding>
@@ -60,7 +69,7 @@ export const SectionContainer = ({ swoosh, swooshColor, background, children }) 
       <Responsive minWidth={size.lg}>
         {children}
         {swoosh && renderSwoosh()}
-      </Responsive>
+      </Responsive>*/}
     </div>
   )
 }

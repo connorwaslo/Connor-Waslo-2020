@@ -14,6 +14,14 @@ const ProjectImage = styled.img`
   @media ${minDevice.md} {
     max-width: 80%
   }
+  
+  @media ${minDevice.lg} {
+    max-width: 65%
+  }
+  
+  @media ${minDevice.xl} {
+    max-width: 50%;
+  }
 `
 
 const useStyles = makeStyles({

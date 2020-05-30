@@ -31,8 +31,6 @@
     "react-helmet": "^5.2.1",
     "react-pose": "^4.0.10",
     "react-typography": "^0.16.19",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.2",
     "styled-components": "^5.1.1",
     "typography": "^0.16.19"
   },

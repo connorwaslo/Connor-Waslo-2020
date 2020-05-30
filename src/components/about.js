@@ -1,14 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
-import { ContentContainer, SectionContainer } from "./containers"
-import { MainTitle, AboutText } from "./typography"
+import { SectionContainer } from "./containers"
+import { AboutText } from "./typography"
 import { Grid } from '@material-ui/core'
-// import { Grid } from 'semantic-ui-react'
 import theme from "../styles/theme"
 import ContentGrid from "./layouts/contentGrid"
 
 const AboutPoint = ({ emoji, text }) => (
-  <Grid container spacing={6}>
+  <Grid container spacing={3}>
     <Grid item xs={1}>
       <AboutText style={{ whiteSpace: "nowrap" }}>{emoji}</AboutText>
     </Grid>
