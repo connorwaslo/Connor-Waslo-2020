@@ -5,7 +5,7 @@ import { ProjectBody, MainTitle } from "../typography"
 import { ThemeProvider } from "styled-components"
 import theme from '../../styles/theme'
 
-function BlogLayout({ pic, title, timeline, description, footnote, borderRadius, children }) {
+function BlogLayout({ pic, title, timeline, team, description, footnote, borderRadius, attachments, children }) {
   return (
     <ThemeProvider theme={theme}>
       <BlogContainer>
@@ -19,8 +19,14 @@ function BlogLayout({ pic, title, timeline, description, footnote, borderRadius,
                 {timeline && <ProjectBody style={{ fontStyle: 'italic' }}>{timeline}</ProjectBody>}
               </Padding>
               <Padding vertical={theme.spacing(2)} horizontal={0}>
+                <ProjectBody><b>Team: {team}</b></ProjectBody>
                 <ProjectBody>{description}</ProjectBody>
               </Padding>
+              {attachments && (
+                <Padding vertical={theme.spacing(4)} horizontal={0}>
+                  {attachments}
+                </Padding>
+              )}
             </Grid>
         </Grid>
 

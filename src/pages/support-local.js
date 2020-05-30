@@ -8,6 +8,7 @@ function SupportLocal() {
     <BlogLayout pic={require('../images/projects/support_local_black.svg')}
                 title='Support Local'
                 timeline='April 2020 - Present'
+                team='5 person non-profit startup'
                 description='Frontend web developer using React.js to build a marketplace supporting COVID affected businesses.'
                 footnote={require('../images/blog-footnotes/arizona.png')}>
       <SEO title='Support Local'/>

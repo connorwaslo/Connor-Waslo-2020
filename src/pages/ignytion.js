@@ -29,6 +29,7 @@ function Ignytion() {
     <BlogLayout pic={require('../images/projects/ignytion.png')}
                 title='Ignytion'
                 timeline='July - October 2018'
+                team='Solo'
                 description='Revamping course registration at Vanderbilt University - a platform based on student input.'
                 footnote={require('../images/blog-footnotes/robot.png')}>
       <SEO title='Ignytion'/>

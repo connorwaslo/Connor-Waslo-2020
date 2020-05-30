@@ -8,6 +8,7 @@ function RGPConsulting() {
     <BlogLayout pic={require('../images/projects/rgp_padded.png')}
                 title='RGP Consulting'
                 timeline='August 2019 - Present'
+                team='6 Vanderbilt undergraduate & graduate students'
                 description='Product management intern developing an internal app.'
                 footnote={require('../images/blog-footnotes/iphone.png')}>
       <SEO title='RGP Consulting'/>

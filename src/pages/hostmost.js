@@ -8,6 +8,7 @@ function Hostmost() {
     <BlogLayout pic={require('../images/projects/hostmost_red.svg')}
                 title='hostmost'
                 timeline='June - August 2019'
+                team='3 co-founders & myself'
                 description='Product & sales intern helping a startup find product-market fit. Also a cold calling machine.'
                 footnote={require('../images/blog-footnotes/house.jpg')}>
       <SEO title='RGP Consulting'/>

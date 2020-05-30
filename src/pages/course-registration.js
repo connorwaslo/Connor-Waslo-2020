@@ -1,15 +1,43 @@
 import React from 'react'
 import BlogLayout from "../components/layouts/blogLayout"
 import SEO from "../components/seo"
-import { BlogHeader, BlogText } from "../components/typography"
+import { BlogHeader, BlogText, InlineLink } from "../components/typography"
 import ProjectImg from "../components/projectImg"
+
+const Attachments = () => (
+  <>
+    <BlogText>
+      <a href="https://connor-waslo-com.s3.amazonaws.com/Course+Registration+White+Paper+-+Waslo%2C+Hunter.pdf" target="_blank">
+        Project White Paper
+      </a>
+    </BlogText>
+    <BlogText>
+      <a href="https://github.com/connorwaslo/vandy-class-search" target="_blank">
+        Project Source Code
+      </a>
+    </BlogText>
+  </>
+)
 
 function CourseRegistration() {
   return (
     <BlogLayout pic={require('../images/projects/v.png')}
                 title='Athena'
                 timeline='June - November 2019'
+                team='Henry Hunter & myself'
                 description='Revamping course registration at Vanderbilt University - a platform based on student input.'
+                attachments={<>
+                  <BlogText>
+                    <InlineLink href="https://connor-waslo-com.s3.amazonaws.com/Course+Registration+White+Paper+-+Waslo%2C+Hunter.pdf">
+                      Project White Paper
+                    </InlineLink>
+                  </BlogText>
+                  <BlogText>
+                    <InlineLink href="https://github.com/connorwaslo/vandy-class-search">
+                      Project Source Code
+                    </InlineLink>
+                  </BlogText>
+                </>}
                 footnote={require('../images/blog-footnotes/pillar.png')}>
       <SEO title='Athena'/>
 

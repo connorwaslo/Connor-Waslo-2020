@@ -63,7 +63,8 @@ export const ProjectBody = styled.p`
 `
 
 export const ProjectRef = styled.a.attrs(() => ({
-  target: '_blank'
+  target: '_blank',
+  rel: 'noreferrer noopener'
 }))`
   font-family: Poppins, sans-serif;
   text-decoration: underline;
@@ -112,7 +113,7 @@ export const BlogHeader = styled.h2`
 `
 
 export const BlogText = styled.p`
-  font-family: Lato, sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size; 18px;
@@ -124,4 +125,11 @@ export const BlogText = styled.p`
     font-size: 21px;
     line-height: 28px;
   }
+`
+
+export const InlineLink = styled.a.attrs(() => ({
+  target: '_blank',
+  rel: 'noreferrer noopener'
+}))`
+  margin: 0;
 `
