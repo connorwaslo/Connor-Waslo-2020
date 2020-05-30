@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Connor Waslo's Personal Wesbite`,
+    title: `Connor Waslo`,
     description: `Who is that?`,
     author: `@connorwaslo`,
   },

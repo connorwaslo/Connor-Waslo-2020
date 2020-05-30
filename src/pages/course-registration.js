@@ -8,7 +8,7 @@ function CourseRegistration() {
     <BlogLayout pic={require('../images/projects/v.png')}
                 title='Athena'
                 description='Revamping course registration at Vanderbilt University - a platform based on student input.'>
-      <SEO title='Athena | Course Registration'/>
+      <SEO title='Athena'/>
 
       <BlogHeader>The Project</BlogHeader>
       <BlogText>

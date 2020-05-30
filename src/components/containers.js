@@ -52,34 +52,35 @@ export const SectionContainer = ({ swoosh, swooshColor, background, children }) 
 
   return (
     <div style={{ background: background}}>
-      <Hidden lgUp>
+      <Hidden mdUp>
         <Padding vertical={theme.spacing(12)} horizontal={0}>
           {children}
         </Padding>
       </Hidden>
-      <Hidden mdDown>
+      <Hidden smDown>
         {children}
         {swoosh && renderSwoosh()}
       </Hidden>
-      {/*<Responsive maxWidth={size.lg - 1}>
-        <Padding vertical={theme.spacing(12)} horizontal={0}>
-          {children}
-        </Padding>
-      </Responsive>
-      <Responsive minWidth={size.lg}>
-        {children}
-        {swoosh && renderSwoosh()}
-      </Responsive>*/}
     </div>
   )
 }
 
 export const BlogContainer = styled.div`
-  @media ${maxDevice.md - 1} {
-    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(24)};
+  padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(6)};
+  
+  @media ${minDevice.sm} {
+    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(8)};
   }
   
   @media ${minDevice.md} {
-    padding: ${({ theme }) => theme.spacing(16)} ${({ theme }) => theme.spacing(32)};
+    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(16)};
+  }
+  
+  @media ${minDevice.lg} {
+    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(28)};
+  }
+  
+  @media ${minDevice.xl} {
+    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(64)};
   }
 `
