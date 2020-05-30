@@ -4,21 +4,6 @@ import SEO from "../components/seo"
 import { BlogHeader, BlogText, InlineLink } from "../components/typography"
 import ProjectImg from "../components/projectImg"
 
-const Attachments = () => (
-  <>
-    <BlogText>
-      <a href="https://connor-waslo-com.s3.amazonaws.com/Course+Registration+White+Paper+-+Waslo%2C+Hunter.pdf" target="_blank">
-        Project White Paper
-      </a>
-    </BlogText>
-    <BlogText>
-      <a href="https://github.com/connorwaslo/vandy-class-search" target="_blank">
-        Project Source Code
-      </a>
-    </BlogText>
-  </>
-)
-
 function CourseRegistration() {
   return (
     <BlogLayout pic={require('../images/projects/v.png')}
@@ -73,9 +58,9 @@ function CourseRegistration() {
       </BlogText>
       <BlogText>
         Those discussions led to us recording our findings in{' '}
-          <a href="https://connor-waslo-com.s3.amazonaws.com/Course+Registration+White+Paper+-+Waslo%2C+Hunter.pdf" target="_blank">
+          <InlineLink href="https://connor-waslo-com.s3.amazonaws.com/Course+Registration+White+Paper+-+Waslo%2C+Hunter.pdf">
             this 4 page white paper
-          </a>
+          </InlineLink>
           {' '}. The paper includes all of our research and suggestions to the administration.
       </BlogText>
       <BlogText>
@@ -84,9 +69,9 @@ function CourseRegistration() {
       </BlogText>
 
       <BlogText>
-        <a href="https://github.com/connorwaslo/vandy-class-search" target="_blank">
+        <InlineLink href="https://github.com/connorwaslo/vandy-class-search">
           If you're interested, you can check out the source code here.
-        </a>
+        </InlineLink>
       </BlogText>
     </BlogLayout>
   )

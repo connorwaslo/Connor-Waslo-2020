@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionContainer, ContentContainer } from './containers'
+import { SectionContainer } from './containers'
 import theme from '../styles/theme'
 
 import Project from "./project"

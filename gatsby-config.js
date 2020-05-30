@@ -19,9 +19,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `connor-waslo-2020`,
+        short_name: `cw`,
         start_url: `/`,
+        icon: `src/images/favicon.png`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`, // This path is relative to the root of the site.
