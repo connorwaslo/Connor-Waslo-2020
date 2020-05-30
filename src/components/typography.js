@@ -102,6 +102,7 @@ export const BlogHeader = styled.h2`
   font-weight: bold;
   font-size; 28px;
   line-height: 34px;
+  margin-top: ${({ theme }) => theme.spacing(8)};
   color: ${props => props.color ? props.color : 'inherit'};  
   
   @media ${minDevice.lg} {
