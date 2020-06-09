@@ -147,3 +147,24 @@ export const InlineLink = styled.a.attrs(() => ({
     color: ${({ theme }) => theme.palette.accents.purple};
   }
 `
+
+export const InlineRef = styled(Link).attrs(() => ({
+  target: '_blank',
+  rel: 'noreferrer noopener'
+}))`
+  margin: 0;
+  // color: white;
+  color: ${({ theme }) => theme.palette.accents.purple};
+  
+  &:hover {
+    color: ${({ theme }) => theme.palette.accents.purple};
+  }
+  
+  &:active {
+    color: ${({ theme }) => theme.palette.accents.purple};
+  }
+  
+  &:visited {
+    color: ${({ theme }) => theme.palette.accents.purple};
+  }
+`

@@ -11,7 +11,7 @@ const theme = {
     text: {
       white: '#FFFFFF',
       light: '#BABABA',
-      detailLight: '#868686',
+      detailLight: '#5E5E5E',
       main: '#000000'
     }
   },

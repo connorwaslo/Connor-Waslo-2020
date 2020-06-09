@@ -1,9 +1,7 @@
 import React from 'react'
 import BlogLayout from "../components/layouts/blogLayout"
 import SEO from "../components/seo"
-import { BlogHeader, BlogText } from "../components/typography"
-import ProjectImg from "../components/projectImg"
-import CodeSnippet from "../components/code-snippet"
+import { BlogHeader, BlogText, InlineLink, InlineRef } from "../components/typography"
 
 function Ignytion() {
   const exampleCode = `
@@ -30,57 +28,87 @@ function Ignytion() {
                 title='Ignytion'
                 timeline='July - October 2018'
                 team='Solo'
-                description='Revamping course registration at Vanderbilt University - a platform based on student input.'
+                description='Created custom web automation and data collection software for growth-stage startups.'
                 footnote={require('../images/blog-footnotes/robot.png')}>
       <SEO title='Ignytion'/>
 
-      <BlogText>This was my first ever profitable business venture!</BlogText>
-      <BlogText>I mean besides the lemonade stand I had when I was 7.</BlogText>
-      <br/>
-      <BlogHeader>Value Prop</BlogHeader>
-      <BlogText>The goal of Ignytion was to build software for startups that allowed them to automate
-        processes and data collection so that founders could spend their time adding value rather than
-        performing repetitive tasks.</BlogText>
-      <BlogText>I worked with several different startups in the Phoenix area and built programs ranging from
-        collecting publicly available demographic data to identifying a competitor's customers.</BlogText>
-      <br/>
-
-      <BlogHeader>The Actual Work</BlogHeader>
-      <BlogText>An interesting aspect about this project was how ephemeral the final products were.</BlogText>
-      <BlogText>Most of the time, presenting the data in a spreadsheet to the startup was the only deliverable.
-        All of the work to code a solution simply disappeared into the jungle of documents on my computer.</BlogText>
-      <BlogText>In the case that I was building a process automation solution for a startup, I often just ran it
-        on my computer until it was done. The startup checked it was successful and then we went our separate ways.</BlogText>
-      <BlogText>Take this code for example. This is a snippet of a spider designed to scrape ~23k Arizona state statutes
-        for use by a company working to help educate Arizona citizens on their rights.</BlogText>
-      <br/>
-
-      <CodeSnippet lang='python' code={exampleCode}/>
-
-      <BlogHeader>My Takeaways</BlogHeader>
-      <BlogText>Managing communication with clients is hard!</BlogText>
-      <BlogText>Without a doubt my biggest lesson from Ignytion was how to conduct myself professionally in a fast-paced
-        environment. Being an "outsider" and working with a startup team meant that I had to figure out exactly what
-        the team was looking for, determine its feasibility, and provide them with a timeline and price all in a short
-        amount of time.</BlogText>
-      <BlogText>Being 17 at the time it was often very tempting to continually check in with my clients for validation, but
-        with these sort of projects it was simply unnecessary. Learning to be self-sufficient and collect all the relevant
-        information at the very beginning of the project has since made many projects much easier.</BlogText>
-      <BlogText>Otherwise, Ignytion was just a lot of fun!</BlogText>
-      <BlogText>I've always loved talking to founders and hearing about their journey and vision, so working
-        directly with successful founders was incredibly rewarding.</BlogText>
-      <BlogText>I got to hear lots of stories about what did work and even more about what didn't work. Hopefully
-        I'll be able to use some of that advice in the near future.</BlogText>
-      <BlogText>The startup community in Phoenix was incredibly supportive of me and it has without a doubt changed
-        the course of my future. #yesphx is the name of the community which has grown immensely in the past few years
-        and I truly can't thank the members of it enough.</BlogText>
-
-      <ProjectImg src={require('../images/blog-pics/yesphx.png')} alt='#yesphx' caption=''/>
+      <BlogText>
+        Right after graduating from high school, I was approached to “scrape” some publicly available data for a startup.
+      </BlogText>
+      <BlogText>
+        I quickly realized that this was a significant need for quite a few local companies and created Ignytion.
+      </BlogText>
 
       <br/>
-      <BlogHeader>Where's Ignytion Now?</BlogHeader>
-      <BlogText>When I got to college I decided to retire Ignytion so that I could focus on scalable ideas. But every
-        once in a while I need to break out the hard skills I learned from Ignytion and scrape some data together.</BlogText>
+
+      <BlogHeader>
+        Value Proposition
+      </BlogHeader>
+      <BlogText>
+        Ignytion automates repetitive tasks so that founders can focus on adding value through critical thinking and problem solving.
+      </BlogText>
+
+      <br/>
+
+      <BlogHeader>
+        The Projects
+      </BlogHeader>
+      <BlogText>
+        I worked with business in industries like marketing, med-tech, education, and chatbots.
+      </BlogText>
+      <BlogText>
+        The data also varied in source, quantity, and means of collection. For example, pulling data from publicly available
+        demographic data is completely different from automating lead generation.
+      </BlogText>
+      <BlogText>
+        Let’s do a deep dive into that lead generation project.
+      </BlogText>
+
+      <br/>
+
+      <BlogHeader>
+        Automating Lead Gen
+      </BlogHeader>
+      <BlogText>
+        This is a dream come true for any sales team. Having done my own lead gen and sales before working
+        at <InlineRef to='/hostmost'>hostmost</InlineRef>, I know how brutal it can be. That’s why I set out to create a script that could do it automatically.
+      </BlogText>
+      <BlogText>
+        My client wanted to find web design and marketing agencies that catered to a specific website niche.
+      </BlogText>
+      <BlogText>
+        First, I ran through the process my client was manually performing at the time to see exactly how high the
+        potential was for complete automation. I defined potential blockers and drew out the flow of interaction.
+      </BlogText>
+      <BlogText>Placeholder</BlogText>
+      <BlogText>
+        I mainly use three tools in my work: Scrapy, Splash, and Selenium.
+      </BlogText>
+      <BlogText>
+        We’ll get to each of them, but first to scrape google I needed to use selenium. Selenium mimics a human
+        interacting with the browser, allowing my laptop to “click” on the searchbar,
+        type in a city, and save the top search results into a doc for me.
+      </BlogText>
+      <br/>
+      <BlogText>
+        With the list of search results accumulated, I could use scrapy and splash to load each individual webpage
+        that I scraped from Google and search for common patterns that web design agencies leave on their website.
+      </BlogText>
+      <BlogText>Something like...</BlogText>
+      <BlogText>⚡ by <InlineLink href='https://scalardev.tech/'>Scalar</InlineLink></BlogText>
+
+      <br/>
+
+      <BlogText>
+        Usually these included a hyperlink to the agency’s website. The software then compiled those links
+        into one spot and then I delivered it to my client’s sales team.
+      </BlogText>
+      <BlogText>
+        Comparing the web scraping process to the manual process, this software accelerated lead generation by over 600%.
+      </BlogText>
+      <BlogText>
+        Saving weeks of time for some pour soul who was going to do all those Google searches manually.
+      </BlogText>
     </BlogLayout>
   )
 }
