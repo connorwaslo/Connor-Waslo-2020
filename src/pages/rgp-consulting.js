@@ -2,6 +2,7 @@ import React from 'react'
 import SEO from "../components/seo"
 import { BlogHeader, BlogText } from "../components/typography"
 import BlogLayout from "../components/layouts/blogLayout"
+import ProjectImg from "../components/projectImg"
 
 function RGPConsulting() {
   return (
@@ -33,7 +34,7 @@ function RGPConsulting() {
         This program placed huge emphasis on the <i>design thinking process</i>.
       </BlogText>
 
-      [design thinking photo]
+      <ProjectImg src={require('../images/blog-pics/design_thinking.png')} alt='design thinking' caption=''/>
 
       <br/>
 
@@ -62,9 +63,6 @@ function RGPConsulting() {
         Our team then consolidated the interview insights along with external white papers to group our discoveries into
         overlapping categories – building an idea map to find the optimal intersection between problem areas.
       </BlogText>
-
-      [bubble map example]
-
       <BlogText>
         While this map was useful in narrowing down the vertical(s) we intended to hone in on, it didn’t help us address
         specific issues. That is, it didn’t show us how these areas correlated with RGP employees and their experience

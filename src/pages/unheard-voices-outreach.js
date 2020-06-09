@@ -2,6 +2,7 @@ import React from 'react'
 import SEO from "../components/seo"
 import { BlogHeader, BlogText, InlineLink } from "../components/typography"
 import BlogLayout from "../components/layouts/blogLayout"
+import ProjectImg from "../components/projectImg"
 
 function UnheardVoicesOutreach() {
   return (
@@ -14,15 +15,13 @@ function UnheardVoicesOutreach() {
       <SEO title='Unheard Voices'/>
 
       <BlogText>
-        Sophomore year of college (2019-20) I was a project manager for Change++, a studnet
+        Sophomore year of college (2019 - 2020) I was a project manager for Change++, a student
         organization that builds software for non-profits at no cost.
       </BlogText>
       <BlogText>
         I worked with Rahim Buford from <InlineLink href=''>Unheard Voices Outreach</InlineLink> to
         create a mobile app connecting individuals coming out of incarceration to relevant resoureces and mentors
       </BlogText>
-
-      [screenshots]
 
       <br/>
 
@@ -57,7 +56,7 @@ function UnheardVoicesOutreach() {
         the <i>low fidelity</i> point one more time.
       </BlogText>
 
-      [wireframes]
+      <ProjectImg src={require('../images/blog-pics/wireframes.png')} alt='wireframes' caption='I promise my design work has improved since then.'/>
 
       <BlogText>
         Our tech stack was React-Native and Firebase. I used Jira to manage the team's week long sprints.
@@ -73,7 +72,7 @@ function UnheardVoicesOutreach() {
         We're currently finalizing the app before deploying it to the app store.
       </BlogText>
       <BlogText>
-        Updates to come!
+        Updates on the final product coming soon.
       </BlogText>
     </BlogLayout>
   )

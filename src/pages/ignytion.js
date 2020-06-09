@@ -2,6 +2,7 @@ import React from 'react'
 import BlogLayout from "../components/layouts/blogLayout"
 import SEO from "../components/seo"
 import { BlogHeader, BlogText, InlineLink, InlineRef } from "../components/typography"
+import ProjectImg from "../components/projectImg"
 
 function Ignytion() {
   const exampleCode = `
@@ -80,7 +81,9 @@ function Ignytion() {
         First, I ran through the process my client was manually performing at the time to see exactly how high the
         potential was for complete automation. I defined potential blockers and drew out the flow of interaction.
       </BlogText>
-      <BlogText>Placeholder</BlogText>
+
+      <ProjectImg src={require('../images/blog-pics/leadgen_flow.png')} alt='leadgen flow' caption='Visualizing the flow of data is the first step to creating a truly encapsulated automation solution.'/>
+
       <BlogText>
         I mainly use three tools in my work: Scrapy, Splash, and Selenium.
       </BlogText>

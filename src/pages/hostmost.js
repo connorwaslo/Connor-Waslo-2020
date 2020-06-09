@@ -51,7 +51,7 @@ function Hostmost() {
         I leveraged tools like <InlineRef href='http://insideairbnb.com/'>Inside Airbnb</InlineRef> to paint a picture of the short term rental market in each city.
       </BlogText>
 
-      <ProjectImg src={require('../images/blog-pics/hostmost_heatmap.png')} alt='hostmost' caption='Some cities are hubs, others are sparse.'/>
+      <ProjectImg src={require('../images/blog-pics/hostmost_heatmap.png')} alt='hostmost' caption='Even though some cities look like hubs, their legislature can tell another story.'/>
 
       <BlogText>
         To find local tours and activities I spent more time browsing Travelocity than anybody likely will in their
