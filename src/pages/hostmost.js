@@ -1,6 +1,6 @@
 import React from 'react'
 import SEO from "../components/seo"
-import { BlogHeader, BlogText, InlineRef } from "../components/typography"
+import { BlogHeader, BlogText, InlineLink } from "../components/typography"
 import BlogLayout from "../components/layouts/blogLayout"
 import ProjectImg from "../components/projectImg"
 
@@ -12,7 +12,7 @@ function Hostmost() {
                 team='3 co-founders & me (the intern)'
                 description='Product & sales intern helping a startup find product-market fit. Also a cold calling machine.'
                 footnote={require('../images/blog-footnotes/house.jpg')}>
-      <SEO title='RGP Consulting'/>
+      <SEO title='hostmost'/>
 
       <BlogText>
         In order to explore less technical roles, I worked as a product/sales intern for a
@@ -48,7 +48,7 @@ function Hostmost() {
         management groups to accelerate sales.
       </BlogText>
       <BlogText>
-        I leveraged tools like <InlineRef href='http://insideairbnb.com/'>Inside Airbnb</InlineRef> to paint a picture of the short term rental market in each city.
+        I leveraged tools like <InlineLink href='http://insideairbnb.com/'>Inside Airbnb</InlineLink> to paint a picture of the short term rental market in each city.
       </BlogText>
 
       <ProjectImg src={require('../images/blog-pics/hostmost_heatmap.png')} alt='hostmost' caption='Even though some cities look like hubs, their legislature can tell another story.'/>
@@ -66,7 +66,7 @@ function Hostmost() {
 
       <BlogHeader>Sales</BlogHeader>
       <BlogText>
-        <InlineRef href='https://www.linkedin.com/in/teddy-dinker-47579629/'>Teddy Dinker</InlineRef>, hostmost’s founder and
+        <InlineLink href='https://www.linkedin.com/in/teddy-dinker-47579629/'>Teddy Dinker</InlineLink>, hostmost’s founder and
         CEO, had already connected with many local businesses and found early adopters for the platform.
         Growing this list of adopters and determining what sort of activities tourists were most willing to pay for became my next task.
       </BlogText>
