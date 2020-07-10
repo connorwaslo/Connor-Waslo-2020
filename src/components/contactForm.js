@@ -60,6 +60,12 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    // Make sure that all three
+    if (Object.keys(state).length !== 3) {
+      return
+    }
+
     const form = e.target
     fetch('/', {
       method: 'POST',
