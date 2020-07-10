@@ -3,6 +3,7 @@ import { navigate } from 'gatsby'
 import styled from 'styled-components'
 import { minDevice } from "../utils/devices"
 import { Button } from '@material-ui/core'
+import theme from '../styles/theme'
 
 const FormInput = styled.input`
   background: ${({ theme }) => theme.palette.backgrounds.input};
@@ -31,9 +32,16 @@ const FormLabel = styled.label`
 `
 
 const SubmitButton = styled(Button)`
-  &&& {
+  && {
     color: ${({ theme }) => theme.palette.text.white};
     background: ${({ theme }) => theme.palette.accents.purple};
+    font-family: Poppins;
+    
+    &:hover {
+      font-family: Poppins;
+      background: ${theme.palette.accents.purple};
+      box-shadow: none
+    }
   }
 `
 
@@ -84,7 +92,7 @@ function ContactForm() {
         <FormInput name="message" onChange={handleChange}/>
       </FormLabel>
 
-      <SubmitButton type="submit">Send</SubmitButton>
+      <SubmitButton type="submit" variant='contained' color='primary'>Send</SubmitButton>
     </form>
   )
 }
