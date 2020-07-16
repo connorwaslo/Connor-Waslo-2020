@@ -6,7 +6,7 @@ export const MainTitle = styled.h1`
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size; 36px;
+  font-size: 36px;
   line-height: 44px;
   color: ${props => props.color ? props.color : 'inherit'};
   margin: 0;
@@ -98,10 +98,10 @@ export const ProjectLink = styled(Link).attrs(() => ({
 `
 
 export const BlogHeader = styled.h2`
-  font-family: Poppins, sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size; 28px;
+  font-size: 28px;
   line-height: 34px;
   margin-top: ${({ theme }) => theme.spacing(8)};
   color: ${props => props.color ? props.color : 'inherit'};  
@@ -113,10 +113,10 @@ export const BlogHeader = styled.h2`
 `
 
 export const BlogText = styled.p`
-  font-family: Poppins, sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size; 18px;
+  font-size: 18px;
   line-height: 24px;
   color: ${props => props.color ? props.color : 'inherit'};
   
