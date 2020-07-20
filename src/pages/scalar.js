@@ -160,7 +160,7 @@ function Scalar() {
         growing Scalar to work on even larger projects.
       </BlogText>
       <BlogText>
-        For only a few months of work, I’m excited at Scalar’s potential and have loved the process.
+        For only a few months of work, I’m excited about Scalar’s potential and have loved the process.
       </BlogText>
       <BlogText>More updates to come.</BlogText>
     </BlogLayout>
