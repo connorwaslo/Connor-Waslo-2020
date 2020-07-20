@@ -12,7 +12,7 @@ function Projects() {
         <Project pic={require('../images/projects/scalar.png')}
                  title='Scalar'
                  description='A creative web development agency I founded with friends.'
-                 link='https://scalardev.tech/'/>
+                 link='/scalar'/>
         <Project pic={require('../images/projects/uvo.png')}
                  title='Unheard Voices Outreach'
                  description='Building a mobile app to provide resources and mentorship to formerly incarcerated individuals.'

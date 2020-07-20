@@ -6,7 +6,7 @@ import Project from "./project"
 
 function Experience() {
   return (
-    <SectionContainer swoosh swooshColor={theme.palette.backgrounds.main} background={theme.palette.accents.purple}>
+    <SectionContainer swoosh swooshColor={theme.palette.backgrounds.main} background={theme.palette.accents.purple} id='experience'>
       <ContentGrid title='Experience' style={{ color: theme.palette.text.white }}>
         <Project pic={require('../images/projects/support_local_black.svg')}
                  title='Support Local'

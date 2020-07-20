@@ -112,6 +112,22 @@ export const BlogHeader = styled.h2`
   }
 `
 
+export const BlogSubtitle = styled.h3`
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: ${({ theme }) => theme.spacing(8)};
+  margin-bottom: ${({ theme }) => theme.spacing(2)};
+  color: ${props => props.color ? props.color : 'inherit'};  
+  
+  @media ${minDevice.lg} {
+    font-size: 28px;
+    line-height: 32PX;
+  }
+`
+
 export const BlogText = styled.p`
   font-family: Roboto, sans-serif;
   font-style: normal;
