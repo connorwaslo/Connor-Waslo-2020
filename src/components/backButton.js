@@ -12,7 +12,7 @@ const Button = styled.button`
   background: transparent;
   outline: none;
   border: none;
-  padding: 0;
+  padding: 0 ${({ theme }) => theme.spacing(8)} 0 0;
   margin: 0;
   
   &:hover {
