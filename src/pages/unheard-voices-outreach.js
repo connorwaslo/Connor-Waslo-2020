@@ -11,6 +11,7 @@ function UnheardVoicesOutreach() {
                 timeline='August 2019 - May 2020'
                 team='5 software engineers'
                 description='Project manager for a mobile app to connect individuals coming out of incarceration to resources and mentorship.'
+                anchor='unheard-voices-outreach'
                 footnote={require('../images/blog-footnotes/unchained.jpg')}>
       <SEO title='Unheard Voices'/>
 

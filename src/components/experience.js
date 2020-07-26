@@ -8,12 +8,14 @@ function Experience() {
   return (
     <SectionContainer swoosh swooshColor={theme.palette.backgrounds.main} background={theme.palette.accents.purple} id='experience'>
       <ContentGrid title='Experience' style={{ color: theme.palette.text.white }}>
+        <div id='support-local'/>
         <Project pic={require('../images/projects/support_local_black.svg')}
                  title='Support Local'
                  timeline='April 2020 - Present'
                  description='Frontend web developer using React.js to build a marketplace supporting COVID affected businesses.'
                  color={theme.palette.backgrounds.main}
                  link='/support-local'/>
+        <div id='rgp-consulting'/>
         <Project pic={require('../images/projects/rgp_padded.png')}
                  title='RGP Consulting'
                  timeline='August 2019 - Present'
@@ -21,6 +23,7 @@ function Experience() {
                  color={theme.palette.backgrounds.main}
                  borderRadius={4}
                  link='/rgp-consulting'/>
+        <div id='hostmost'/>
         <Project pic={require('../images/projects/hostmost.svg')}
                  title='hostmost'
                  timeline='June - August 2019'

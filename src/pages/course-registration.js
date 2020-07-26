@@ -23,6 +23,7 @@ function CourseRegistration() {
                     </InlineLink>
                   </BlogText>
                 </>}
+                anchor='course-registration'
                 footnote={require('../images/blog-footnotes/pillar.png')}>
       <SEO title='Athena'/>
 

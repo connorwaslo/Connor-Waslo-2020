@@ -11,6 +11,7 @@ function RGPConsulting() {
                 timeline='August 2019 - Present'
                 team='6 Vanderbilt undergraduate & graduate students'
                 description='Product management intern developing an internal app.'
+                anchor='rgp-consulting'
                 footnote={require('../images/blog-footnotes/iphone.png')}>
       <SEO title='RGP Consulting'/>
 

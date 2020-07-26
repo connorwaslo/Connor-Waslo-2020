@@ -4,10 +4,13 @@ import { Grid } from '@material-ui/core'
 import { ProjectBody, MainTitle } from "../typography"
 import { ThemeProvider } from "styled-components"
 import theme from '../../styles/theme'
+import BackButton from "../backButton"
 
-function BlogLayout({ pic, title, timeline, team, description, footnote, borderRadius, attachments, children }) {
+function BlogLayout({ pic, title, timeline, team, description, footnote, borderRadius, attachments, anchor, children }) {
   return (
     <ThemeProvider theme={theme}>
+      <BackButton anchor={`/#${anchor}`}/>
+
       <BlogContainer>
         <Grid container spacing={2}>
             <Grid item xs={12} md={4}>

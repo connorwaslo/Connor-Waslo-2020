@@ -11,6 +11,7 @@ function Hostmost() {
                 timeline='June - August 2019'
                 team='3 co-founders & me (the intern)'
                 description='Product & sales intern helping a startup find product-market fit. Also a cold calling machine.'
+                anchor='hostmost'
                 footnote={require('../images/blog-footnotes/house.jpg')}>
       <SEO title='hostmost'/>
 

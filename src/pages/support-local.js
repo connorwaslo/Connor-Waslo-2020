@@ -17,6 +17,7 @@ function SupportLocal() {
                     </InlineLink>
                   </BlogText>
                   }
+                anchor='support-local'
                 footnote={require('../images/blog-footnotes/arizona.png')}>
       <SEO title='Support Local'/>
 

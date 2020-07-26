@@ -19,6 +19,7 @@ function Scalar() {
                     </InlineLink>
                   </BlogText>
                 }
+                anchor='scalar'
                 footnote={require('../images/projects/scalar.png')}>
       <SEO title='Scalar'/>
 

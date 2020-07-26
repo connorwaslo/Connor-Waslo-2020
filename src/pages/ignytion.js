@@ -30,6 +30,7 @@ function Ignytion() {
                 timeline='July - October 2018'
                 team='Solo'
                 description='Created custom web automation and data collection software for growth-stage startups.'
+                anchor='ignytion'
                 footnote={require('../images/blog-footnotes/robot.png')}>
       <SEO title='Ignytion'/>
 
