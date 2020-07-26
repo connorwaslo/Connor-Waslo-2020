@@ -22,7 +22,7 @@ function Projects() {
         <div id='course-registration'/>
         <Project pic={require('../images/projects/v.png')}
                  title='Athena'
-                 description='Revamping course registration at Vanderbilt University - a platform based on student input.'
+                 description='Revamping course registration at Vanderbilt University: a platform based on student input.'
                  link='/course-registration'/>
         <div id='ignytion'/>
         <Project pic={require('../images/projects/ignytion.png')}
