@@ -1,10 +1,10 @@
 import React from 'react'
 import { BlogContainer, Padding } from '../containers'
 import { Grid } from '@material-ui/core'
-import { ProjectBody, MainTitle } from "../typography"
-import { ThemeProvider } from "styled-components"
+import { ProjectBody, MainTitle } from '../typography'
+import { ThemeProvider } from 'styled-components'
 import theme from '../../styles/theme'
-import BackButton from "../backButton"
+import BackButton from '../backButton'
 
 function BlogLayout({ pic, title, timeline, team, description, footnote, borderRadius, attachments, anchor, children }) {
   return (

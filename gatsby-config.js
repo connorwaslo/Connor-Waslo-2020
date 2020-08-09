@@ -29,6 +29,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        color: '#654FCC',
+        height: '4px',
+        paths: ['/course-registration', '/hostmost', '/ignytion', '/rgp-consulting', '/scalar', '/support-local', '/unheard-voices-outreach']
+      }
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: "src/utils/typography.js"
