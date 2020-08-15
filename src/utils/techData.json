@@ -31,6 +31,11 @@
       "val": 9
     },
     {
+      "name": "Like JavaScript but sometimes more frustrating",
+      "id": "TypeScript",
+      "val": 8
+    },
+    {
       "name": "<p>internet</p>",
       "id": "HTML",
       "val": 5
@@ -88,6 +93,14 @@
     },
     {
       "source": "JavaScript",
+      "target": "TypeScript"
+    },
+    {
+      "source": "JavaScript",
+      "target": "React.js"
+    },
+    {
+      "source": "TypeScript",
       "target": "React.js"
     },
     {
@@ -95,7 +108,15 @@
       "target": "Express.js"
     },
     {
+      "source": "TypeScript",
+      "target": "Express.js"
+    },
+    {
       "source": "JavaScript",
+      "target": "React-Native"
+    },
+    {
+      "source": "TypeScript",
       "target": "React-Native"
     },
     {
