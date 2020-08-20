@@ -42,7 +42,7 @@ function TechGraph() {
             pauseAnimation
             width={480}
             height={360}
-            backgroundColor={theme.palette.backgrounds.main}
+            backgroundColor='transparent'
             nodeAutoColorBy='group'
             nodeCanvasObject={(node, ctx, globalScale) => {
               const label = node.id;

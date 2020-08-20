@@ -1,16 +1,17 @@
 import React from 'react'
 import SEO from "../components/seo"
-import { BlogHeader, BlogText } from "../components/typography"
+import { BlogHeader, BlogText, InlineRef } from "../components/typography"
 import BlogLayout from "../components/layouts/blogLayout"
 import ProjectImg from "../components/projectImg"
 
-function RGPConsulting() {
+function InnovationGarage() {
   return (
-    <BlogLayout pic={require('../images/projects/rgp_padded.png')}
-                title='RGP Consulting'
-                timeline='August 2019 - Present'
+    <BlogLayout pic={require('../images/projects/wondry_logo.png')}
+                title='Innovation Garage'
+                timeline='August 2019 - August 2020'
                 team='6 Vanderbilt undergraduate & graduate students'
-                description='Product management intern developing an internal app.'
+                description='Product management intern developing an internal app to help
+                            reduce attrition and improve employee experience.'
                 anchor='rgp-consulting'
                 footnote={require('../images/blog-footnotes/iphone.png')}>
       <SEO title='RGP Consulting'/>
@@ -18,18 +19,18 @@ function RGPConsulting() {
       <BlogText>
         Sophomore year at Vanderbilt I was lucky enough to participate in Innovation Garage: a
         yearlong consulting project identifying an opportunity and developing a tech solution for
-        RGP Consulting.
-      </BlogText>
-      <BlogText>
-        In this post I'll talk about the high level processes we used but can't share any specifics.
+        a large corporate client.
       </BlogText>
 
       <br/>
 
-      <BlogHeader>Innovation Garage</BlogHeader>
+      <BlogHeader>What's Innovation Garage? 💡</BlogHeader>
       <BlogText>
         Innovation Garage is a selective program at Vanderbilt University where a small team of students
-        work closely with a company to identify opportunity for innovation and pitch a solution.
+        work closely with a company to identify opportunity for innovation and develop a solution.
+      </BlogText>
+      <BlogText>
+        We lead the process all the way from ideation to product development.
       </BlogText>
       <BlogText>
         This program placed huge emphasis on the <i>design thinking process</i>.
@@ -39,27 +40,27 @@ function RGPConsulting() {
 
       <br/>
 
-      <BlogHeader>Empathize</BlogHeader>
+      <BlogHeader>Empathize 🤝</BlogHeader>
       <BlogText>
         I didn’t know any of my team members when the project began in August, but we were tossed right into the fire.
         Our student team led weekly meetings with the RGP team to summarize progress and plan next steps.
       </BlogText>
       <BlogText>
-        To begin our process we needed to interview employees. I was responsible for reaching out to RGP employees
+        To begin our process we needed to interview employees. I was responsible for reaching out to employees
         (across all different roles) and scheduling interviews.
       </BlogText>
       <BlogText>
-        While I wouldn’t call this a hugely exciting role, it was certainly a good experience in juggling calendar
-        invites and managing schedules.
+        It was a mild shock to be emailing C-Suite executives to schedule interviews, but <InlineRef to='/hostmost'>hostmost</InlineRef> taught me
+        to be comfortable with outreach like that.
       </BlogText>
       <BlogText>
-        These interviews taught us so much about the different roles at RGP, employee experiences, and personalities at
+        These interviews taught us so much about the different roles, employee experiences, and personalities at
         the firm.
       </BlogText>
 
       <br/>
 
-      <BlogHeader>Define</BlogHeader>
+      <BlogHeader>Define 📚</BlogHeader>
       <BlogText>
         Our team then consolidated the interview insights along with external white papers to group our discoveries into
         overlapping categories – building an idea map to find the optimal intersection between problem areas.
@@ -75,7 +76,7 @@ function RGPConsulting() {
 
       <br/>
 
-      <BlogHeader>Ideate</BlogHeader>
+      <BlogHeader>Ideate 🤯</BlogHeader>
       <BlogText>
         Our team’s advisors were essential in helping us get to this stage in a smart and constructive way.
       </BlogText>
@@ -94,20 +95,12 @@ function RGPConsulting() {
 
       <br/>
 
-      <BlogHeader>Summer...</BlogHeader>
+      <BlogHeader>Summer ☀️</BlogHeader>
       <BlogText>
-        Now the prototype and test phases.
-      </BlogText>
-      <BlogText>
-        This summer (2020) I will be continuing to work with RGP to develop the solution that we pitched. I’m taking the
-        role of a product management intern and will be working with three of my teammates from the year to plan and
-        build our product.
-      </BlogText>
-      <BlogText>
-        More updates to come in August.
+        Coming soon...
       </BlogText>
     </BlogLayout>
   )
 }
 
-export default RGPConsulting
+export default InnovationGarage

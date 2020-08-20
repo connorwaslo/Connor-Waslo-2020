@@ -33,7 +33,7 @@ module.exports = {
       options: {
         color: '#654FCC',
         height: '4px',
-        paths: ['/course-registration', '/hostmost', '/ignytion', '/rgp-consulting', '/scalar', '/support-local', '/unheard-voices-outreach']
+        paths: ['/course-registration', '/hostmost', '/ignytion', '/innovation-garage', '/scalar', '/support-local', '/unheard-voices-outreach']
       }
     },
     {
