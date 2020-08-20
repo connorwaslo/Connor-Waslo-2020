@@ -14,11 +14,6 @@ function Projects() {
                  title='Scalar'
                  description='A creative web development agency I founded with friends.'
                  link='/scalar'/>
-        <div id='unheard-voices-outreach'/>
-        <Project pic={require('../images/projects/uvo.png')}
-                 title='Unheard Voices Outreach'
-                 description='Building a mobile app to provide resources and mentorship to formerly incarcerated individuals.'
-                 link='/unheard-voices-outreach'/>
         <div id='course-registration'/>
         <Project pic={require('../images/projects/v.png')}
                  title='Athena'
