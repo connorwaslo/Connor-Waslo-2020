@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { minDevice, maxDevice } from '../utils/devices'
-import theme from '../styles/theme'
 
 import { Hidden } from "@material-ui/core"
 
@@ -31,35 +30,21 @@ export const ContentContainer = styled.div`
   }
 `
 
-const SwooshContainer = styled.div`
-  margin: 0;
+export const SwooshContainer = styled.div`
+  margin: -0.5rem;
   padding: 0;
-  background: ${({ swooshColor }) => `linear-gradient(transparent 75%, ${swooshColor} 25%)`};
 `
 
-export const SectionContainer = ({ swoosh, swooshColor, background, children }) => {
-  function renderSwoosh() {
-    return (
-      <SwooshContainer swooshColor={swooshColor}>
-        <svg fill={swooshColor} opacity="1" width="100%" height="100" viewBox="0 0 4.66666 0.333331"
-             preserveAspectRatio="none" transform="scale(-1, 1)">
-          <path
-            d="M-7.87402e-006 0.0148858l0.00234646 0c0.052689,0.0154094 0.554437,0.154539 1.51807,0.166524l0.267925 0c0.0227165,-0.00026378 0.0456102,-0.000582677 0.0687992,-0.001 1.1559,-0.0208465 2.34191,-0.147224 2.79148,-0.165524l0.0180591 0 0 0.166661 -7.87402e-006 0 0 0.151783 -4.66666 0 0 -0.151783 -7.87402e-006 0 0 -0.166661z"></path>
-        </svg>
-      </SwooshContainer>
-    )
-  }
-
+export const SectionContainer = ({ background, children }) => {
   return (
-    <div style={{ background: background}}>
+    <div style={{ background: background, padding: 0, margin: 0 }}>
       <Hidden mdUp>
-        <Padding vertical={theme.spacing(12)} horizontal={0}>
+        <Padding vertical={0} horizontal={0}>
           {children}
         </Padding>
       </Hidden>
       <Hidden smDown>
         {children}
-        {swoosh && renderSwoosh()}
       </Hidden>
     </div>
   )
