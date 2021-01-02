@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { minDevice, maxDevice } from '../utils/devices'
 
-import { Hidden } from "@material-ui/core"
-
 export const Padding = styled.div`
   padding: ${props => props.vertical}  ${props => props.horizontal};
 `
@@ -21,8 +19,11 @@ export const TitleContainer = styled.div`
 `
 
 export const ContentContainer = styled.div`
+  margin: -0.1rem;
+
   @media ${maxDevice.md} {
     padding: ${({ theme }) => theme.spacing(8)};
+    margin: 0;
   }
   
   @media ${minDevice.md} {
@@ -33,19 +34,16 @@ export const ContentContainer = styled.div`
 export const SwooshContainer = styled.div`
   margin: -0.5rem;
   padding: 0;
+  
+  @media ${maxDevice.lg} {
+    margin: -0.75rem;
+  }
 `
 
 export const SectionContainer = ({ background, children }) => {
   return (
     <div style={{ background: background, padding: 0, margin: 0 }}>
-      <Hidden mdUp>
-        <Padding vertical={0} horizontal={0}>
-          {children}
-        </Padding>
-      </Hidden>
-      <Hidden smDown>
-        {children}
-      </Hidden>
+      {children}
     </div>
   )
 }
