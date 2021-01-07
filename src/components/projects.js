@@ -13,19 +13,19 @@ function Projects() {
         <Project pic={require('../images/projects/scalar.png')}
                  title='Scalar'
                  timeline='In Progress'
-                 description='A creative web development agency I founded with friends.'
+                 description='A software development agency with a focus on business viability.'
                  link='/scalar'/>
         <div id='course-registration'/>
         <Project pic={require('../images/projects/v.png')}
                  title='Athena'
                  timeline='Completed'
-                 description='Revamping course registration at Vanderbilt University: a platform based on student input.'
+                 description='Revamping course registration at Vanderbilt University by building a platform based on student input.'
                  link='/course-registration'/>
         <div id='ignytion'/>
         <Project pic={require('../images/projects/ignytion.png')}
                  title='Ignytion'
                  timeline='Completed'
-                 description='A company I founded which provided data and web automation services to growth-stage startups.'
+                 description='Data and web automation for growth-stage startups.'
                  link='/ignytion'/>
       </ContentGrid>
     </SectionContainer>

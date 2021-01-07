@@ -59,7 +59,7 @@ export const ProjectBody = styled.p`
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 24px;
   margin: ${({ theme }) => theme.spacing(2)} 0;
   color: ${({ color, theme }) => color ? color : theme.palette.text.detailLight};
 `

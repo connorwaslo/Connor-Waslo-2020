@@ -35,7 +35,12 @@ const SubmitButton = styled(Button)`
   && {
     color: ${({ theme }) => theme.palette.text.white};
     background: ${({ theme }) => theme.palette.accents.purple};
+    width: 216px;
+    height: 36px;
+    border-radius: 18px;
     font-family: Poppins;
+    font-weight: bold;
+    text-transform: capitalize;
     
     &:hover {
       font-family: Poppins;
@@ -98,7 +103,9 @@ function ContactForm() {
         <FormInput name="message" onChange={handleChange}/>
       </FormLabel>
 
-      <SubmitButton type="submit" variant='contained' color='primary'>Send</SubmitButton>
+      <div style={{ textAlign: 'center' }}>
+        <SubmitButton type="submit" variant='contained' color='primary'>Submit</SubmitButton>
+      </div>
     </form>
   )
 }
