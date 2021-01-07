@@ -6,7 +6,8 @@ const theme = {
     },
     accents: {
       green: '#29AF84',
-      purple: '#654FCC'
+      purple: '#654FCC',
+      blue: '#33A1FD'
     },
     text: {
       white: '#FFFFFF',
