@@ -16,6 +16,11 @@
       "val": 3
     },
     {
+      "name": "Smoooooth queries",
+      "id": "GraphQL",
+      "val": 4
+    },
+    {
       "name": "Mobile app development",
       "id": "React-Native",
       "val": 10
@@ -109,6 +114,14 @@
     },
     {
       "source": "TypeScript",
+      "target": "Express.js"
+    },
+    {
+      "source": "GraphQL",
+      "target": "TypeScript"
+    },
+    {
+      "source": "GraphQL",
       "target": "Express.js"
     },
     {

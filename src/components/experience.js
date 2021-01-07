@@ -7,19 +7,19 @@ import Project from "./project"
 function Experience() {
   return (
     <SectionContainer swoosh swooshColor={theme.palette.backgrounds.main} background={theme.palette.accents.purple} id='experience'>
-      <ContentGrid title='Experience' style={{ color: theme.palette.text.white }}>
+      <ContentGrid title='Work Experience' style={{ color: theme.palette.text.white }}>
         <div id='support-local'/>
-        <Project pic={require('../images/projects/support_local_black.svg')}
-                 title='Support Local'
-                 timeline='April 2020 - Present'
-                 description='Frontend web developer using React.js to build a marketplace supporting COVID affected businesses.'
+        <Project pic={require('../images/projects/bpg.png')}
+                 title='Blockparty Group'
+                 timeline='April - December 2020'
+                 description='Technical product manager developing an app to reduce risk of COVID for bar patrons.'
                  color={theme.palette.backgrounds.main}
                  link='/support-local'/>
         <div id='rgp-consulting'/>
         <Project pic={require('../images/projects/wondry_w_logo.jpeg')}
                  title='Innovation Garage'
                  timeline='August 2019 - August 2020'
-                 description='Product management intern developing an internal app for a consulting firm.'
+                 description='Product management intern developing a people analytics tool for a consulting firm.'
                  color={theme.palette.backgrounds.main}
                  borderRadius={4}
                  link='/innovation-garage'/>
@@ -27,7 +27,7 @@ function Experience() {
         <Project pic={require('../images/projects/hostmost.svg')}
                  title='hostmost'
                  timeline='June - August 2019'
-                 description='Product & sales intern helping a startup find product-market fit.'
+                 description='Product & sales intern helping a hospitality-tech startup find product-market fit.'
                  color={theme.palette.backgrounds.main}
                  link='/hostmost'/>
       </ContentGrid>

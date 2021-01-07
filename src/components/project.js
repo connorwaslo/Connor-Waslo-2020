@@ -50,7 +50,9 @@ function Project({ pic, title, description, timeline, link, color, borderRadius 
         <ProjectTitle>{title}</ProjectTitle>
         {timeline && <ProjectBody color={color} style={{ fontStyle: 'italic' }}>{timeline}</ProjectBody>}
         <ProjectBody color={color}>{description}</ProjectBody>
-        {renderLink()}
+        <div style={{ margin: `${theme.spacing(4)} 0`}}>
+          {renderLink()}
+        </div>
       </Grid>
     </Grid>
   )
