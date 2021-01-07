@@ -3,21 +3,14 @@ import SEO from "../components/seo"
 import { BlogHeader, BlogText, InlineLink } from "../components/typography"
 import BlogLayout from "../components/layouts/blogLayout"
 
-function SupportLocal() {
+function Blockparty() {
   return (
-    <BlogLayout pic={require('../images/projects/support_local_black.svg')}
-                title='Support Local'
-                timeline='April 2020 - Present'
-                team='5 person non-profit startup'
-                description='Frontend web developer using React.js to build a marketplace supporting COVID affected businesses.'
-                attachments={
-                  <BlogText>
-                    <InlineLink href="https://azsupportlocal.com">
-                      Our Website
-                    </InlineLink>
-                  </BlogText>
-                  }
-                anchor='support-local'
+    <BlogLayout pic={require('../images/projects/bpg.png')}
+                title='Blockparty Group'
+                timeline='April - December 2020'
+                team='8 person startup'
+                description='Technical product manager developing an app to reduce risk of COVID for bar patrons.'
+                anchor='blockparty'
                 footnote={require('../images/blog-footnotes/arizona.png')}>
       <SEO title='Support Local'/>
 
@@ -72,4 +65,4 @@ function SupportLocal() {
   )
 }
 
-export default SupportLocal
+export default Blockparty

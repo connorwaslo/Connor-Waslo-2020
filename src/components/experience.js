@@ -8,13 +8,13 @@ function Experience() {
   return (
     <SectionContainer swoosh swooshColor={theme.palette.backgrounds.main} background={theme.palette.accents.purple} id='experience'>
       <ContentGrid title='Work Experience' style={{ color: theme.palette.text.white }}>
-        <div id='support-local'/>
+        <div id='blockparty'/>
         <Project pic={require('../images/projects/bpg.png')}
                  title='Blockparty Group'
                  timeline='April - December 2020'
                  description='Technical product manager developing an app to reduce risk of COVID for bar patrons.'
                  color={theme.palette.backgrounds.main}
-                 link='/support-local'/>
+                 link='/blockparty'/>
         <div id='rgp-consulting'/>
         <Project pic={require('../images/projects/wondry_w_logo.jpeg')}
                  title='Innovation Garage'
