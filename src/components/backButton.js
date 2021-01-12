@@ -5,7 +5,7 @@ import { navigate } from 'gatsby'
 const BackContainer = styled.div`
   position: fixed;
   top: ${({ theme }) => theme.spacing(4)};
-  left: ${({ theme }) => theme.spacing(1)};
+  left: ${({ theme }) => theme.spacing(4)};
 `
 
 const Button = styled.button`
@@ -22,13 +22,15 @@ const Button = styled.button`
 
 const BackArrow = styled.img`
   width: ${({ theme }) => theme.spacing(5)};
+  margin-right: ${({ theme }) => theme.spacing(1)};
 `
 
 function BackButton({ anchor }) {
   return (
     <BackContainer>
-      <Button onClick={() => navigate(anchor)}>
+      <Button onClick={() => navigate(anchor)} style={{ display: 'flex', flexDirection: 'row' }}>
         <BackArrow src={require('../images/misc/back_arrow.svg')} alt='back button'/>
+        Back
       </Button>
     </BackContainer>
   )

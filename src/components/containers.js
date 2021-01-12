@@ -52,18 +52,22 @@ export const BlogContainer = styled.div`
   padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(6)};
   
   @media ${minDevice.sm} {
-    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(8)};
+    margin: 0 auto;
+    width: 90%;
   }
   
   @media ${minDevice.md} {
-    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(16)};
+    margin: 0 auto;
+    width: 65%;
   }
   
   @media ${minDevice.lg} {
-    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(28)};
+    margin: 0 auto;
+    width: 60%;
   }
   
   @media ${minDevice.xl} {
-    padding: ${({ theme }) => theme.spacing(12)} ${({ theme }) => theme.spacing(64)};
+    margin: 0 auto;
+    width: 55%;
   }
 `

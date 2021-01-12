@@ -9,6 +9,7 @@ const FormInput = styled.input`
   background: ${({ theme }) => theme.palette.backgrounds.input};
   border: none;
   border-radius: 4px;
+  font-weight: normal;
   width: 100%;
   height: ${({ theme }) => theme.spacing(12)};
   padding: ${({ theme }) => theme.spacing(4)};
