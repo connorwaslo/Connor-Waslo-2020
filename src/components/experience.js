@@ -12,7 +12,7 @@ function Experience() {
         <Project pic={require('../images/projects/bpg.png')}
                  title='Blockparty Group'
                  timeline='April - December 2020'
-                 description='Technical product manager developing an app to reduce risk of COVID for bar patrons.'
+                 description='Technical product manager developing an app to reduce the risk of COVID for bar patrons.'
                  color={theme.palette.backgrounds.main}
                  link='/blockparty'/>
         <div id='rgp-consulting'/>
