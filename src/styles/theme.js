@@ -1,6 +1,7 @@
 const theme = {
   palette: {
     backgrounds: {
+      cream: '#FCFAF4',
       main: '#F9F9F9',
       input: '#E4E4E4'
     },
